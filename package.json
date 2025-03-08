@@ -1,5 +1,5 @@
 {
-  "name": "eleventy-duo",
+  "name": "terminal",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -38,6 +38,7 @@
     "clean": "rm -rf ./public"
   },
   "dependencies": {
-    "remove": "^0.1.5"
+    "remove": "^0.1.5",
+    "yarn": "^1.22.22"
   }
 }

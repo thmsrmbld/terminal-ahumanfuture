@@ -26,6 +26,10 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--color-80);
 }
 
+* {
+  cursor: url('/public/images/cursor.svg'), auto;
+}
+
 *,
 *:before,
 *:after {
