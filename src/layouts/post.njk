@@ -11,20 +11,18 @@ layout: base.njk
       </time>
       <span> | </span>
       <span>{{ content | readingTime }} read</span>
+      <span> | </span>
+      {% for tag in tags | pageTags %}
+        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+        <a href="{{ tagUrl | url }}">#{{ tag }}</a>
+      {% endfor %}
+
     </div>
   </header>
 
   <main class="post__content">
     {{ content | safe }}
   </main>
-
-  <aside class="post__aside">
-    <div class="post__tags">
-      {% for tag in tags | pageTags %}
-        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <a href="{{ tagUrl | url }}">#{{ tag }}</a>
-      {% endfor %}
-    </div>
 
     <nav class="post__pagination">
       {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
@@ -47,6 +45,5 @@ layout: base.njk
 
       {% endif %}
     </nav>
-  </aside>
 
 </article>

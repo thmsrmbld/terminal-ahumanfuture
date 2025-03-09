@@ -1,6 +1,6 @@
 {
-  "name": "[ terminal ]",
-  "description": "terminal is the web site of software engineer & heavy metal enjoyer Thomas Rumbold.",
+  "name": "TERMINAL ::",
+  "description": "TERMINAL is the web site of software engineer & heavy metal enjoyer Thomas Rumbold.",
   "url": "https://terminal.ahumanfuture.co",
   "author": {
     "name": "Thomas Rumbold",
@@ -9,25 +9,30 @@
   "defaultSocialImage": "/images/default-social-image.png",
   "headerLinks": [
     {
-      "text": "Posts >",
+      "text": "Posts",
       "url": "/posts",
-      "external": false
-    },
-    {
-      "text": "About",
-      "url": "/about",
       "external": false
     }
   ],
-  "socialLinks": [
+  "heroLinks": [
+    {
+      "text": "About",
+      "url": "/about/",
+      "external": false
+    },
+    {
+      "text": "AHF",
+      "url": "https://ahumanfuture.co/",
+      "external": true
+    },
     {
       "text": "GitHub",
       "url": "https://github.com/thmsrmbld/",
       "external": true
     },
     {
-      "text": "AHF",
-      "url": "https://ahumanfuture.co/",
+      "text": "E-Mail",
+      "url": "mailto:thomas@ahumanfuture.co?subject=Hey!",
       "external": true
     }
   ],

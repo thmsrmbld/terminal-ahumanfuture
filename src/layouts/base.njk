@@ -97,8 +97,8 @@
         <div class="footer__content">
 
           <ul class="hero__social-links">
-            {% if site.socialLinks %}
-              {% for item in site.socialLinks %}
+            {% if site.heroLinks %}
+              {% for item in site.heroLinks %}
                 {% set externalAttribute = '' %}
                 {% if item.external %}
                   {% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}
@@ -128,8 +128,8 @@
 
           {% if site.showFooterAttribution %}
             <p class="footer__attribution">
-               [ A static site on <a href="https://www.11ty.dev" target="_blank" rel="noopener">11ty</a>,
-               on a gentle adaptation of <a href="https://github.com/yinkakun/eleventy-duo" target="_blank" rel="noopener noreferrer">duo</a>. ]
+               : A static site on <a href="https://www.11ty.dev" target="_blank" rel="noopener">11ty</a>,
+               on a gently-adapted <a href="https://github.com/yinkakun/eleventy-duo" target="_blank" rel="noopener noreferrer">Duo</a> :
             </p>
           {% endif %}
 

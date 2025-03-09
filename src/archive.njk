@@ -1,13 +1,10 @@
 --- 
-layout: base.njk 
+layout: base.njk
+title: Posts
 permalink: /posts/
 ---
 
-<h1>All Posts</h1>
-
-<div class="tags">
-  {% include "tags-list.njk" %}
-</div>
-
+<h2> All posts</h2>
+<div class="tags">Filters: {% include "tags-list.njk" %}</div>
 {% set postslist = collections.posts %}
 {% include "posts-list.njk" %}

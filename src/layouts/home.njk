@@ -8,9 +8,9 @@ layout: base
       {{ content | safe }}
     </div>
 
-    {% if site.socialLinks %}
+    {% if site.heroLinks %}
       <ul class="hero__social-links">
-        {% for item in site.socialLinks %}
+        {% for item in site.heroLinks %}
           {% set externalAttribute = '' %}
 
           {% if item.external %}
@@ -28,8 +28,10 @@ layout: base
 </header>
 
 <section class="post-list__wrapper">
-  <h3 class="post-list__heading">Recent writing</h2>
-
+<div class="post-header">
+  <h3 class="post-list__heading">Recent posts</h3>
+  <div class="post-list__subheading">(or, <a href="/posts/">all posts</a>)</div>
+</div>
   {% set postslist = collections.posts | head(-5) %}
   {% include "posts-list.njk" %}
 

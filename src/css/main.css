@@ -15,6 +15,15 @@
   min-height: 100%;
 }
 
+@media (max-width: 768px) {
+  /* We want more gutter space on smaller devices */
+    .layout-wrapper {
+        padding-right: 0.9rem;
+        padding-left: 0.9rem;
+    }
+}
+
+
 .main {
   display: flex;
   padding-bottom: 4rem;

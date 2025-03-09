@@ -27,7 +27,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 * {
-  cursor: url('/public/images/cursor.svg'), auto;
+  cursor: url('/src/images/cursor.svg'), auto;
 }
 
 *,
@@ -180,7 +180,6 @@ kbd {
   color: var(--accent);
   font-feature-settings: normal;
   background: var(--color-30);
-  color: var(--accent);
   padding: 1px 6px;
   margin: 0 2px;
   font-size: 0.95rem;
@@ -234,4 +233,20 @@ mark {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.kofi-button {
+    display: inline-block;
+    width: fit-content;
+    margin: 0.5rem 0;
+    transition: opacity 0.2s ease;
+}
+
+.kofi-button:hover {
+    opacity: 0.9;
+}
+
+.kofi-button img {
+    height: 32px;
+    border: 0;
 }

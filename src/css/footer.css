@@ -1,5 +1,5 @@
 .footer {
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
   padding-left: 1rem;
   padding-right: 1rem;
   max-width: none;
@@ -14,8 +14,8 @@
   margin-right: auto;
   max-width: 48.75rem;
   width: 100%;
-  font-size: var(--text-base);
-  border-top: 1px solid rgba(230, 230, 230, 1);
+  font-size: var(--text-sm);
+  border-top: 1px solid var(--light-accent);
 }
 
 .footer__content > * {
@@ -23,7 +23,7 @@
 }
 
 .footer__attribution {
-  font-size: var(--text-sm);
+  font-size: var(--text-xs);
 }
 
 .footer ul {
