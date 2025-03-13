@@ -1,0 +1,306 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  background-color: var(--background);
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-80) var(--background);
+  height: 100%;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-80);
+}
+
+* {
+  cursor: url("/src/images/cursor.svg"), auto;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  border-style: solid;
+  border-width: 0;
+  border-color: currentColor;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  background: var(--color-10);
+  height: 1px;
+  margin-top: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  text-decoration: inherit;
+  text-decoration: underline;
+}
+
+ol {
+  list-style-type: none;
+  counter-reset: item;
+  margin-top: 1rem;
+}
+
+ol > li {
+  counter-increment: item;
+  position: relative;
+  padding-bottom: 0.725rem;
+}
+
+ol > li:last-child {
+  padding-bottom: 0;
+}
+
+ol > li::before {
+  content: "* 0" counter(item);
+  font-weight: 600;
+  margin-right: 0.7rem;
+}
+
+/* For numbers 10 and above, we don't need the leading zero */
+ol > li:nth-child(n + 10)::before {
+  content: "* " counter(item);
+}
+
+ol ol {
+  list-style-type: lower-alpha;
+}
+
+ol a:hover {
+  outline: 2px dashed var(--accent);
+  outline-offset: 2px;
+  text-decoration: none;
+}
+
+ol > li::marker {
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+table {
+  border-collapse: collapse;
+  caption-side: bottom;
+  overflow-x: auto;
+  min-width: 100%;
+  border: 1px solid var(--color-30);
+  margin-top: 1rem;
+}
+
+table caption {
+  margin-top: 1rem;
+}
+
+td,
+th {
+  border: 1px solid var(--color-30);
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  font-weight: 500;
+}
+
+td:only-child {
+  text-align: center;
+}
+
+* + h1,
+* + h2 {
+  margin-top: 5rem;
+}
+
+* + h3,
+* + h4,
+* + h5 {
+  margin-top: 3rem;
+}
+
+* + p {
+  margin-top: 2rem;
+}
+
+h2 + p,
+h3 + p,
+h4 + p {
+  margin-top: 1rem;
+}
+
+iframe,
+audio,
+video,
+img {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+blockquote {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 1.6rem;
+  border-left: 4px solid var(--accent);
+  font-style: italic;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+code,
+kbd {
+  color: var(--accent);
+  font-feature-settings: normal;
+  background: var(--color-30);
+  padding: 1px 6px;
+  margin: 0 2px;
+  font-size: 0.95rem;
+}
+
+pre {
+  white-space: pre-wrap;
+  tab-size: 2;
+  font-size: 0.95rem;
+  border: 1px solid var(--color-10);
+  padding: 1rem;
+  margin-top: 1rem;
+  overflow: auto;
+  max-width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-80);
+}
+
+pre::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+}
+
+pre::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+pre::-webkit-scrollbar-thumb {
+  background-color: var(--color-80);
+}
+
+pre,
+code {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.dash-link a:hover {
+  outline: 2px dashed var(--accent);
+  outline-offset: 2px;
+  text-decoration: none;
+}
+
+.dot {
+  display: inline-block;
+  flex: none;
+  width: 0.7rem;
+  height: 0.7rem;
+  background: currentColor;
+  border-radius: 100%;
+  color: var(--accent);
+}
+
+.kofi-button {
+  display: inline-block;
+  width: fit-content;
+  margin: 0.5rem 0;
+  transition: opacity 0.2s ease;
+}
+
+.kofi-button:hover {
+  opacity: 0.9;
+}
+
+.kofi-button img {
+  height: 32px;
+  border: 0;
+}
+
+.padded-top {
+  margin-top: 0.7rem;
+}
+
+.shimmer {
+  position: relative;
+  background: linear-gradient(90deg, #222 0%, #fff 20%, #222 40%);
+  color: transparent;
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: shine 7s linear infinite;
+  will-change: background-position;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+    background-position: center;
+  }
+}
+
+@keyframes shine {
+  from {
+    background-position: 200% center;
+  }
+  to {
+    background-position: -200% center;
+  }
+}

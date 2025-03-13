@@ -1,0 +1,36 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero h1 {
+  font-size: var(--text-3xl);
+}
+
+.hero p {
+  font-size: var(--text-2xl);
+  margin-top: 1rem;
+}
+
+.hero__social-links {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+.hero__social-links > li {
+  margin-right: 2rem;
+  margin-top: 1rem;
+  font-size: var(--text-base);
+}
+
+.hero__social-links a {
+  text-decoration: none;
+}
+
+.hero__social-links a:hover {
+  outline: 2px dashed var(--accent);
+  outline-offset: 2px;
+}

@@ -1,0 +1,53 @@
+---
+layout: base.njk
+---
+
+<article class="post">
+  <header class="post__header">
+    <h1>{{ title }}</h1>
+    <div class="post__details">
+      <time datetime="{{ page.date | htmlDateString }}">
+        {{ page.date | readableDate }}
+      </time>
+      <span>◦</span>
+        <span>{{ content | getReadingTime }} min read</span>
+      <span>◦</span>
+      <span>
+      {% for tag in tags | pageTags %}
+        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+        <a href="{{ tagUrl | url }}">#{{ tag }}</a>{% if not loop.last %} & {% endif %}
+      {% endfor %}
+      </span>
+        <span class="post__np-icon"><span class="post__np-icon__inner">🎧</span><a href="{{audioLink}}" target="_blank">{{ nowPlaying }}</a></span>
+    </div>
+  </header>
+
+  <main class="post__content">
+    {{ content | safe }}
+  </main>
+
+    <nav class="post__pagination">
+      {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+      {%- if nextPost %}
+
+        <a href="{{ nextPost.url | url }}">
+          <span>←</span>
+          <span>{{ nextPost.data.title }}</span>
+        </a>
+
+      {% endif %}
+
+      {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+      {%- if previousPost %}
+
+        <a href="{{ previousPost.url | url }}">
+          <span>{{ previousPost.data.title }}</span>
+          <span>→</span>
+        </a>
+
+      {% endif %}
+    </nav>
+
+</article>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>

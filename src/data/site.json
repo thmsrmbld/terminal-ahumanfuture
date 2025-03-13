@@ -1,0 +1,67 @@
+{
+  "name": "Terminal",
+  "description": "TERMINAL is the web site of software engineer & heavy metal enjoyer Thomas Rumbold.",
+  "url": "https://terminal.ahumanfuture.co",
+  "author": {
+    "name": "Thomas Rumbold",
+    "email": "thomas@ahumanfuture.co"
+  },
+  "defaultSocialImage": "/images/default-social-image.png",
+  "headerLinks": [
+    {
+      "text": "Posts",
+      "url": "/posts",
+      "external": false
+    }
+  ],
+  "heroLinks": [
+    {
+      "text": "About",
+      "url": "/about/",
+      "external": false
+    },
+    {
+      "text": "AHF",
+      "url": "https://ahumanfuture.co/",
+      "external": true
+    },
+    {
+      "text": "GH",
+      "url": "https://github.com/thmsrmbld/",
+      "external": true
+    },
+    {
+      "text": "BS",
+      "url": "https://bsky.app/profile/ahumanfuture.co",
+      "external": true
+    },
+    {
+      "text": "E-Mail",
+      "url": "mailto:thomas@ahumanfuture.co?subject=Hey!",
+      "external": true
+    }
+  ],
+  "footerLinks": [
+    {
+      "text": "AHF",
+      "url": "https://ahumanfuture.co/",
+      "external": true
+    },
+    {
+      "text": "GH",
+      "url": "https://github.com/thmsrmbld/",
+      "external": true
+    },
+    {
+      "text": "BS",
+      "url": "https://bsky.app/profile/ahumanfuture.co",
+      "external": true
+    },
+    {
+      "text": "RSS",
+      "url": "/feed.xml",
+      "external": true
+    }
+  ],
+  "showFooterAttribution": true
+}
