@@ -5,6 +5,12 @@
   margin-bottom: 4rem;
 }
 
+@media (max-width: 768px) {
+  .header {
+    margin-bottom: 2rem;
+  }
+}
+
 .header__content {
   display: flex;
   flex-wrap: wrap;
