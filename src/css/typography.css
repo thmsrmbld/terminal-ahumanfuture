@@ -3,7 +3,6 @@
     src: url("/src/fonts/MaisonNeue-Medium.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
@@ -11,7 +10,6 @@
     src: url("/src/fonts/Roboto_Mono.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
-    font-display: optional;
 }
 
 @font-face {
@@ -19,7 +17,6 @@
     src: url("/src/fonts/IBMPlexSans-Regular.ttf") format("ttf");
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
 }
 
 :root {
