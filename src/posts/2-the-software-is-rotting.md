@@ -11,6 +11,7 @@ tags:
 description:
   The bad news is that your software is rotting. The good news is that there are many, many things you can do to slow the process to a crawl.
 published: false
+permalink: false
 ---
 
 <pre>{{ description }}</pre>

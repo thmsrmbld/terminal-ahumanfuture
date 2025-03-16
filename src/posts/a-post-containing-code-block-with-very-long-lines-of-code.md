@@ -1,9 +1,10 @@
 ---
 title: A post containing code blocks, with very long lines of code
 description: Health goth raw denim vaporware waistcoat, vegan neutra glossier. Cronut chartreuse tbh meh schlitz.
-date: "2021-06-28"
+date: 2000-01-01
 tags: [demo-content, code]
 published: false
+permalink: false
 ---
 
 Health goth raw denim vaporware waistcoat, vegan neutra glossier. Cronut chartreuse tbh meh schlitz.
