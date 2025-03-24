@@ -1,5 +1,5 @@
 .footer {
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
   max-width: none;
@@ -27,7 +27,6 @@
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  margin-top: 2rem;
   text-transform: uppercase;
 }
 
@@ -36,13 +35,10 @@
   font-size: var(--text-sm);
 }
 
-/*.footer__content > * {*/
-/*    margin-top: 2rem;*/
-/*}*/
 
 .footer__attribution {
   font-size: var(--text-xs);
-  margin-top: 0.8rem;
+  margin-top: 3.5rem;
 }
 
 .footer ul {

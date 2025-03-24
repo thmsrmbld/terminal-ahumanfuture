@@ -1,5 +1,5 @@
 ---
-title: Your software is rotting
+title: Your software is rotting.
 date: 2025-03-18
 nowPlaying: Vinegar Hill, by Elijah Fox
 audioLink: ""
@@ -10,8 +10,7 @@ tags:
   - long-read
 description:
   The bad news is that your software is rotting. The good news is that there are many, many things you can do to slow the process to a crawl.
-published: false
-permalink: false
+published: true
 ---
 
 <pre>{{ description }}</pre>
@@ -24,21 +23,28 @@ TODO - Sharing tools (Email, BSky, WhatsApp, LinkedIn (this should go in base te
 
 ## Your software is rotting.
 
-Recently I cannot shake the feeling that all software is rotting from the inside out like something organic in a garden when you leave it to the order 
-of the natural world. I think this is because most software is just a frozen-in-time solution to a problem that is changing around us,
-which is why it's so important to write software that is simple to change. Code is a model; and as the saying goes: *All models
-are wrong. Some models are useful*. Large pieces of (web) software, in 2025, are almost always scaffolding around the business problem(s) that they're made 
-to solve. How a codebase is built, from the bottom up, is a representation of the order from which it's born. The order being its constraints in time,
-skill, and humans (generally, all - a cost), each of which vary radically, depending on the problem space and its incentives.
+Recently I cannot shake the feeling that all software is rotting from the inside out like something organic in a garden
+when you leave it to the order of the natural world. I think this is because software is just a frozen-in-time set of 
+solutions to problems constantly changing around us, which is why it's so important to software that is simple to change. 
 
-The basis, and contradiction, of this type of extant decay is that it is simultaneously easier and more difficult than ever to build software for the Internet. The component
+Code is a model; and as the saying goes: 
+
+<blockquote>All models are wrong. Some models are useful.</blockquote>
+
+Large (web) codebases in 2025 are scaffolding around the business problem(s) that they're made to solve. And how a
+codebase is built is a representation of the order of which it is born; the difficult problem space and all of its ugly 
+and lucrative incentives.
+
+The basis and contradiction of this type of extant decay is that it is simultaneously easier and more difficult than ever to build software for the Internet. The component
 parts of any non-trivial web application (user interface, application logic, data storage, distribution, and deployment) are complex by nature and all,
 themselves, an ongoing concern - built on changing browsing, computing, security, accessibility and developer experience requirements. Your choice to 
 even make any foundational technology choices _at all_ grants you an inheritance, that like all great injustices, _are not_ your fault but _are_ your responsibility.
 Before you write a line of your _own_ code you're _already_ choosing a world of pest-control. Unless you write everything alone, from the ground up, which is 
 so perverse an idea as to be impossible in practice.
 
-So I think that software begins to rot at the moment it is conceived in the brain of anyone ambitious enough to attempt to get
+<hr>
+
+**So**, I think that software begins to rot at the moment it is conceived in the brain of anyone ambitious enough to attempt to get
 a computer to do something sensible. Of course, our individual ability to instruct a computer to do something sensible is determined almost entirely by
 our individual ability to truly understand a) what _sensible_ is and b) how to actually execute on that. This is the same reason that we
 all write bugs, and that we all need teams. Instructing computers with languages sometimes feels to me almost perfectly incompatible with what most 
@@ -53,7 +59,7 @@ as such, are ahead of the problem, and there are many highly effective things yo
 them, you might _even_ slow it to a less than noticeable crawl. As with all guidance, these things are better executed as prevention rather than cure, but 
 I think you can retrofit a lot of these quite simple ideas even if you're already a long way down the road.
 
-These ideas came to me in three categories: **Foundations**, **Workflow** and **Maintenance**
+These ideas came to me in three categories: **Foundations**, **Workflow** and **Maintenance**.
 
 <hr>
 
