@@ -27,7 +27,7 @@
 }
 
 .post__details a:hover {
-  outline: 2px dashed var(--accent);
+  outline: 2px dashed var(--accent-primary);
   outline-offset: 2px;
 }
 
@@ -58,7 +58,7 @@
 
 .post_content li a:hover {
   text-decoration: none;
-  color: var(--accent);
+  color: var(--accent-primary);
 }
 
 .post__aside {
@@ -83,7 +83,7 @@
 }
 
 .post__tags a:hover {
-  color: var(--accent);
+  color: var(--accent-primary);
 }
 
 .post__np-icon {
@@ -131,7 +131,7 @@
 }
 
 .post__pagination a:hover {
-  color: var(--accent);
+  color: var(--accent-primary);
 }
 
 .post__pagination span {
@@ -161,18 +161,5 @@
     margin-left: 0;
     margin-top: 0.2rem;
     width: 100%;
-  }
-
-  /* Hide the last divider before tags */
-  .post__details > span:nth-last-child(2) {
-    display: none;
-  }
-}
-
-/* High contrast mode */
-@media (prefers-contrast: more) {
-  .post__details,
-  .post__tags {
-    color: var(--color-80);
   }
 }

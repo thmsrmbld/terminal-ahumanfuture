@@ -1,0 +1,11 @@
+<div class="tags-list">
+  {%- for tagStat in collections.tagStats -%}
+    <a href="{{ tagStat.url | url }}" 
+       {% if page.url == tagStat.url %}class="tag-active"{% endif %}
+    >#{{ tagStat.name }}<small>[{{ tagStat.count }}]</small></a>
+    {% if not loop.last %} ◦ {% endif %}
+  {%- endfor -%}
+  <span class="post-list__subheading">
+      [or, <a href="/">home</a>]
+    </span>
+</div> 

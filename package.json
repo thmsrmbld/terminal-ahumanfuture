@@ -2,6 +2,7 @@
   "name": "terminal",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
@@ -35,7 +36,9 @@
     "dev:site": "env ELEVENTY_ENV=development eleventy --serve",
     "build:assets": "webpack --mode production",
     "build:site": "env ELEVENTY_ENV=production eleventy",
-    "clean": "rm -rf ./public"
+    "clean": "rm -rf ./public",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css,html,njk}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md,css,html,njk}\""
   },
   "dependencies": {
     "reading-time": "^1.5.0",

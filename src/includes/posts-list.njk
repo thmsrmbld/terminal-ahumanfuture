@@ -1,32 +1,41 @@
 <ul class="post-list">
-  {% for post in postslist | reverse %}
-    <li class="post-list__item">
-      <div>
-        <div class="post-list__meta">
-          <time datetime="{{ post.date | htmlDateString }}">
-            {{ post.date | readableDate }}
-          </time>
-          <span>◦</span>
-            <span>{{ post.content | getReadingTime }} min read</span>
-        </div>
+  {% for post in postslist %}
+  <li class="post-list__item">
+    <div class="post-list__item--inner">
+      <div class="post-list__meta">
+        {% if post.data.featured %}
+        <span class="post-list__featured-badge"><span class="featured-star">★</span>Featured</span>
+        <span>◦</span>
+        {% endif %}
+        
+        <time datetime="{{ post.date | dateToFormat('yyyy-LL-dd') }}">{{ post.date | dateToFormat('yyyy-MM-dd')  }}</time>
+        
+        <span>◦</span>
+        <span>{{ post.data.readingTime or post.template.inputContent | getReadingTime }} min read</span>
+      </div>
 
-        <div class="post-list__tags">
-          {% for tag in post.data.tags %}
-            {%- if collections.tagList.indexOf(tag) != -1 -%}
-              {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-                <a href="{{ tagUrl | url }}">#{{ tag }}</a>{% if not loop.last %} & {% endif %}
-            {%- endif -%}
+      <div class="post-list__tags">
+        {% if post.data.displayTags %}
+          {% for tag in post.data.displayTags %} 
+          <a href="{{ tag.url | url }}">#{{ tag.name }}</a>{% if not loop.last %} & {% endif %}
           {% endfor %}
-        </div>
+        {% else %}
+          {% set displayTags = post.data.tags | filterTagsForDisplay | sort %}
+          {% for tag in displayTags %} 
+          {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+          <a href="{{ tagUrl | url }}">#{{ tag }}</a>{% if not loop.last %} & {% endif %}
+          {% endfor %}
+        {% endif %}
       </div>
 
       <h3 class="post-list__title">
-        <a  href="{{ post.url }}">{{ post.data.title }}</a>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
       </h3>
 
       <p class="post-list__excerpt">{{ post.data.description }}</p>
 
       <a class="post-list__read-more" href="{{ post.url }}"><span class="dot"></span> Read post</a>
-    </li>
+    </div>
+  </li>
   {% endfor %}
 </ul>

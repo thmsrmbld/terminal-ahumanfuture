@@ -1,29 +1,28 @@
-/* Base tag styles */
-.tags {
+.tags-list {
   margin-top: 1rem;
   margin-right: 0;
   margin-bottom: 1.6rem;
   margin-left: 0;
   font-size: var(--text-sm);
+  color: var(--color-80);
+  line-height: 1.5rem;
 }
 
-.tags a {
+.tags-list a {
   text-decoration: none;
-  color: var(--color-90);
+  color: var(--color-80);
   transition: color 0.2s ease;
 }
 
-.tags a:hover {
-  outline: 2px dashed var(--accent);
+.tags-list a:hover {
+  outline: 2px dashed var(--accent-primary);
   outline-offset: 2px;
 }
 
-/* Post list container */
 .post-list__wrapper {
   margin-top: 5rem;
 }
 
-/* Post header */
 .post-header {
   display: flex;
   align-items: center;
@@ -50,7 +49,7 @@
 }
 
 .post-list__subheading a:hover {
-  outline: 2px dashed var(--accent);
+  outline: 2px dashed var(--accent-primary);
   outline-offset: 2px;
 }
 
@@ -68,11 +67,33 @@
   padding-right: 0;
   padding-bottom: 3rem;
   padding-left: 0;
-  border-top: 1px solid var(--light-accent);
+  border-top: 1px solid var(--accent-tertiary);
+}
+
+.post-list__featured-badge {
+  text-transform: uppercase;
+  font-size: var(--text-xs);
+  align-items: center;
+  color: white;
+  background-color: var(--accent-secondary);
+  padding: 0.2rem 0.6rem 0.2rem 0.3rem;
+}
+
+.featured-star {
+  font-size: 1.4em;
+  margin-right: 0.25rem;
+  display: inline-block;
+  line-height: 0;
+  position: relative;
 }
 
 .post-list__item:last-child {
   padding-bottom: 1rem;
+}
+
+.post-list__item--inner {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Post titles */
@@ -88,7 +109,7 @@
 }
 
 .post-list__title a:hover {
-  color: var(--accent);
+  color: var(--accent-primary);
   text-decoration: none;
 }
 
@@ -97,9 +118,13 @@
   font-size: var(--text-sm);
   margin-top: 1rem;
   color: var(--color-90);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.post-list__meta > * + * {
+.post-list__meta>*+* {
   margin-left: 0.5rem;
 }
 
@@ -117,7 +142,7 @@
 }
 
 .post-list__tags a:hover {
-  outline: 2px dashed var(--accent);
+  outline: 2px dashed var(--accent-primary);
   outline-offset: 2px;
 }
 
@@ -149,7 +174,7 @@
 }
 
 .post-list__read-more:hover {
-  outline: 2px dashed var(--accent);
+  outline: 2px dashed var(--accent-primary);
   outline-offset: 2px;
 }
 
@@ -164,14 +189,7 @@
 }
 
 .all-posts-link:hover {
-  outline: 2px dashed var(--accent);
+  outline: 2px dashed var(--accent-primary);
   outline-offset: 2px;
   text-decoration: none;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .post-list__item {
-    padding: 1.2rem 0 2rem;
-  }
 }

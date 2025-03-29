@@ -4,37 +4,30 @@ layout: base
 
 <header class="hero">
   <div class="hero-content">
-    <div class="intro">
-      {{ content | safe }}
-    </div>
+    <div class="intro">{{ content | safe }}</div>
 
     {% if site.heroLinks %}
-      <ul class="hero__social-links">
-        {% for item in site.heroLinks %}
-          {% set externalAttribute = '' %}
+    <ul class="hero__social-links">
+      {% for item in site.heroLinks %} {% set externalAttribute = '' %} {% if item.external %} {%
+      set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %} {% endif %}
 
-          {% if item.external %}
-            {% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}
-          {% endif %}
-
-          <li>
-            <a href="{{ item.url | url }}" {{ externalAttribute | safe }}>{{ item.text }}</a>
-          </li>
-        {% endfor %}
-      </ul>
+      <li>
+        <a href="{{ item.url | url }}" {{ externalAttribute | safe }}>{{ item.text }}</a>
+      </li>
+      {% endfor %}
+    </ul>
     {% endif %}
   </div>
-
 </header>
 
 <section class="post-list__wrapper">
-<div class="post-header">
-  <h2 class="post-list__heading">Recent posts</h2>
-  <div class="post-list__subheading">[or, <a href="/posts/">all posts ({{ collections.posts | length }})</a>]</div>
-</div>
-  {% set postslist = collections.posts | head(-5) %}
-  {% include "posts-list.njk" %}
-
+  <div class="post-header">
+    <h2 class="post-list__heading">Recent posts</h2>
+    <div class="post-list__subheading">
+      [or, <a href="/posts/">all posts ({{ collections.sortedPosts | length }})</a>]
+    </div>
+  </div>
+  {% set postslist = collections.sortedPosts | head(5) %} {% include "posts-list.njk" %}
 </section>
 
 <a class="all-posts-link" href="{{ '/posts/' | url }}">All posts</a>

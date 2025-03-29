@@ -16,11 +16,6 @@
   ],
   "heroLinks": [
     {
-      "text": "Me",
-      "url": "/about/",
-      "external": false
-    },
-    {
       "text": "AHF",
       "url": "https://ahumanfuture.co/",
       "external": true
@@ -36,8 +31,13 @@
       "external": true
     },
     {
-      "text": "E-Mail",
+      "text": "Mail",
       "url": "mailto:thomas@ahumanfuture.co?subject=Hey!",
+      "external": true
+    },
+    {
+      "text": "RSS",
+      "url": "/feed.xml",
       "external": true
     }
   ],
@@ -63,5 +63,6 @@
       "external": true
     }
   ],
+  "showFooterLinks": false,
   "showFooterAttribution": true
 }

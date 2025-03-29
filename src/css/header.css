@@ -21,7 +21,7 @@
   max-width: 48.75rem;
   padding: 1rem;
   margin-top: 1rem;
-  border-bottom: 1px solid var(--light-accent);
+  border-bottom: 1px solid var(--accent-primary-tertiary);
 }
 
 .site-title {
@@ -31,7 +31,7 @@
 }
 
 .site-title a:hover {
-  color: var(--accent);
+  color: var(--accent-primary);
 }
 
 .site-title a {
@@ -48,7 +48,7 @@
   right: -15px;
   width: 10px;
   height: 100%;
-  background-color: var(--accent);
+  background-color: var(--accent-primary);
   animation: blink 1.5s step-end infinite;
 }
 
@@ -81,7 +81,7 @@
 }
 
 .nav__list a:hover {
-  outline: 2px dashed var(--accent);
+  outline: 2px dashed var(--accent-primary);
   outline-offset: 2px;
 }
 

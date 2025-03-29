@@ -1,6 +1,6 @@
-const autoprefixer = require("autoprefixer");
-const postcssPresetEnv = require("postcss-preset-env");
-const atImport = require("postcss-import");
+import autoprefixer from "autoprefixer";
+import postcssPresetEnv from "postcss-preset-env";
+import atImport from "postcss-import";
 
 const plugins = [
   atImport,
@@ -17,13 +17,13 @@ const plugins = [
 const isDev = process.env.APP_ENV === "development";
 
 if (!isDev) {
-  const cssnano = require("cssnano");
-
-  [].push.apply(plugins, [
-    cssnano({
-      preset: "default",
-    }),
-  ]);
+  import("cssnano").then(({ default: cssnano }) => {
+    plugins.push(
+      cssnano({
+        preset: "default",
+      })
+    );
+  });
 }
 
-module.exports = { plugins };
+export default { plugins };

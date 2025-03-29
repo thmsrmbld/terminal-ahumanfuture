@@ -109,7 +109,7 @@ ol ol {
 }
 
 ol a:hover {
-  outline: 2px dashed var(--accent);
+  outline: 2px dashed var(--accent-primary);
   outline-offset: 2px;
   text-decoration: none;
 }
@@ -190,14 +190,14 @@ blockquote {
   margin-top: 2rem;
   margin-bottom: 1rem;
   padding-left: 1.6rem;
-  border-left: 4px solid var(--accent);
+  border-left: 4px solid var(--accent-primary);
   font-style: italic;
   font-family: "IBM Plex Sans", sans-serif;
 }
 
 code,
 kbd {
-  color: var(--accent);
+  color: var(--accent-primary);
   font-feature-settings: normal;
   background: var(--color-30);
   padding: 1px 6px;
@@ -245,7 +245,7 @@ pre code {
 }
 
 .dash-link a:hover {
-  outline: 2px dashed var(--accent);
+  outline: 2px dashed var(--accent-primary);
   outline-offset: 2px;
   text-decoration: none;
 }
@@ -257,7 +257,7 @@ pre code {
   height: 0.7rem;
   background: currentColor;
   border-radius: 100%;
-  color: var(--accent);
+  color: var(--accent-primary);
 }
 
 .kofi-button {

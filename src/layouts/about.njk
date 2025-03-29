@@ -4,9 +4,10 @@ layout: base.njk
 
 <div class="about">
   <h1>About me</h1>
-  <img src="{{ image | url }}"
-   alt="Picture of a bald headed man with black sunglasses with a green stylised glitch effect."
-   class="about__image"
-   >
+  <img
+    src="{{ image | url }}"
+    alt="Picture of a bald headed man with black sunglasses with a green stylised glitch effect."
+    class="about__image"
+  />
   {{ content | safe }}
 </div>

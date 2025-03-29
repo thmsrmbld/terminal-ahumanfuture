@@ -1,13 +1,18 @@
-const path = require("path");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
-const { WebpackManifestPlugin } = require("webpack-manifest-plugin");
+import path from "path";
+import { fileURLToPath } from "url";
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import TerserPlugin from "terser-webpack-plugin";
+import { WebpackManifestPlugin } from "webpack-manifest-plugin";
+
+// ESM equivalent of __dirname
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const isDev = process.env.ELEVENTY_ENV === "development";
 
 const baseFilename = isDev ? "main" : "main.[contenthash]";
 
-module.exports = {
+export default {
   entry: [
     path.resolve(__dirname, "src", "js", "main.js"),
     path.resolve(__dirname, "src", "css", "main.css"),

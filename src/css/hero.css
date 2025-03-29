@@ -31,6 +31,6 @@
 }
 
 .hero__social-links a:hover {
-  outline: 2px dashed var(--accent);
+  outline: 2px dashed var(--accent-primary);
   outline-offset: 2px;
 }

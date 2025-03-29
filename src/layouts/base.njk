@@ -92,7 +92,6 @@
             <small class="shimmer">“I do not care what comes after; I have seen the dragons on the wind of morning.”</small>
         </div>
   
-
           {% if site.showFooterAttribution %}
             <div class="footer__attribution">
                On <a href="https://www.11ty.dev" target="_blank" rel="noopener">11ty</a>, in {% year %},
@@ -101,8 +100,8 @@
           {% endif %}
 
 
-<ul class="footer__social-links">
-            {% if site.footerLinks %}
+          <ul class="footer__social-links">
+            {% if site.showFooterLinks and site.footerLinks %}
               {% for item in site.footerLinks %}
                 {% set externalAttribute = '' %}
 
@@ -116,7 +115,6 @@
               {% endfor %}
             {% endif %}
           </ul>
-
 
         <div class="footer__strapline">
             <small>◦◦◦</small>

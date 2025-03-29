@@ -1,16 +1,18 @@
 ---
-title: I launched this little blog on 11ty, and I am excited about it.
+title: I launched this little blog on 11ty, and I am excited about it
 date: 2025-03-12
 nowPlaying: A Shimmer, by Nils Frahm
 audioLink: https://open.spotify.com/track/09F0zRNSUa0qAWYUksXtXt?si=df8d2b202dfc4b31
 tags:
   - 11ty
   - writing
+  - software
   - personal-news
 description:
   I put off building this website for over a year and then I whipped it together in 3 short evenings. I will, once
   again, of course, be learning no lessons about procrastination from this.
 published: true
+featured: false
 ---
 
 <pre>{{ description }}</pre>

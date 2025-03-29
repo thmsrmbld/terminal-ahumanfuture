@@ -1,22 +1,13 @@
 ---
 pagination:
-  data: collections
+  data: collections.tagList
   size: 1
   alias: tag
-  filter:
-    - all
-    - nav
-    - post
-    - posts
-    - tagList
   addAllPagesToCollections: true
-layout: base.njk
-permalink: /tags/{{ tag }}/
+layout: posts-page.njk
+permalink: "{% if tag == 'all' %}/posts/{% else %}/tags/{{ tag | slugify }}/{% endif %}"
 eleventyComputed:
-  title: "{{ tag | title }}"
-  description: "All posts tagged “{{ tag }}”"
+  title: "{% if tag == 'all' %}Posts{% else %}{{ tag | title }}{% endif %}"
+  description: '{% if tag == ''all'' %}All posts{% else %}All posts tagged "{{ tag }}"{% endif %}'
+  tagName: "{{ tag }}"
 ---
-<h2>Posts in: #{{ tag }}</h2>
-<div class="tags">Other tags: {% include "tags-list.njk" %} </div>
-{% set postslist = collections[tag] %}
-{% include "posts-list.njk" %}

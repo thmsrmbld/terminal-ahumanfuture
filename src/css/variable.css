@@ -1,6 +1,7 @@
 :root {
-  --accent: rgb(0, 255, 25);
-  --light-accent: rgba(230, 230, 230, 1);
+  --accent-primary: rgb(0, 255, 25);
+  --accent-secondary: rgb(0, 10, 255);
+  --accent-tertiary: rgba(230, 230, 230, 1);
   --background: #fff;
   --color: rgb(0, 0, 0);
   --color-90: rgb(117, 117, 117);

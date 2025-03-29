@@ -1,4 +1,2 @@
-{% for tag in collections.tagList %}
-  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-    <a href="{{ tagUrl | url }}">#{{ tag }}</a>{% if not loop.last %},{% endif %}
-{% endfor %}
+{% for tag in collections.tagList %} {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+<a href="{{ tagUrl | url }}">#{{ tag }}</a>{% if not loop.last %},{% endif %} {% endfor %}
