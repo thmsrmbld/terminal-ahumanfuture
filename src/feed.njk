@@ -1,8 +1,7 @@
 ---
-permalink: "/feed.xml"
+permalink: /feed.xml
 eleventyExcludeFromCollections: true
 ---
-
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ site.name }}</title>
@@ -10,7 +9,7 @@ eleventyExcludeFromCollections: true
   <link href="{{ site.url }}{{ permalink }}" rel="self" />
   <link href="{{ site.url }}/" />
   {% if collections.sortedPosts | length %}
-  <updated>{{ collections.sortedPosts | rssLastUpdatedDate }}</updated>
+  <updated>{{ collections.sortedPosts[0].date | dateToFormat("yyyy-MM-dd'T'HH:mm:ss'Z'") }}</updated>
   {% endif %}
   <id>{{ site.url }}</id>
   <author>
@@ -22,7 +21,7 @@ eleventyExcludeFromCollections: true
   <entry>
     <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}" />
-    <updated>{{ post.date | rssDate }}</updated>
+    <updated>{{ post.date | dateToFormat("yyyy-MM-dd'T'HH:mm:ss'Z'") }}</updated>
     <id>{{ absolutePostUrl }}</id>
     <content type="html"> <![CDATA[ {{ post.templateContent | safe }} ]]> </content>
   </entry>
