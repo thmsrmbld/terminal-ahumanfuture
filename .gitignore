@@ -4,4 +4,6 @@ npm-debug.*
 .DS_Store
 public
 .vscode
+# Cache files
 .cache
+.cache/

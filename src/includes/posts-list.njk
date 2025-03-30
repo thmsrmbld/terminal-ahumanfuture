@@ -2,17 +2,20 @@
   {% for post in postslist %}
   <li class="post-list__item">
     <div class="post-list__item--inner">
-      <div class="post-list__meta">
+      <div class="post-list__meta-wrapper">
         {% if post.data.featured %}
-        <span class="post-list__featured-badge"><span class="featured-star">★</span>Featured</span>
-        <span>◦</span>
+          <div class="post-list__featured-badge">
+            <div class="featured-star">★</div>
+          </div>
+          <div>◦</div>
         {% endif %}
-        
-        <time datetime="{{ post.date | dateToFormat('yyyy-LL-dd') }}">{{ post.date | dateToFormat('yyyy-MM-dd')  }}</time>
-        
-        <span>◦</span>
-        <span>{{ post.data.readingTime or post.template.inputContent | getReadingTime }} min read</span>
+        <div class="post-list__meta">
+          <time datetime="{{ post.date | dateToFormat('yyyy-LL-dd') }}">{{ post.date | dateToFormat('yyyy-MM-dd')  }}</time>
+          <span>◦</span>
+          <span>{{ post.data.readingTime or post.template.inputContent | getReadingTime }} min read</span>
+        </div>
       </div>
+ 
 
       <div class="post-list__tags">
         {% if post.data.displayTags %}
