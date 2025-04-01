@@ -12,7 +12,7 @@
         <div class="post-list__meta">
           <time datetime="{{ post.date | dateToFormat('yyyy-LL-dd') }}">{{ post.date | dateToFormat('yyyy-MM-dd')  }}</time>
           <span>◦</span>
-          <span>{{ post.data.readingTime or post.template.inputContent | getReadingTime }} min read</span>
+          <span>{{ post.content | getReadingTime }} min read</span>
         </div>
       </div>
  
