@@ -8,44 +8,46 @@ layout: base.njk
     
     <div class="post__details">
       <time datetime="{{ date | dateToFormat('yyyy-LL-dd') }}">{{ date | dateToFormat('yyyy-MM-dd') }}</time>
-      <span>◦</span>
-      <span>{{ page.readingTime or content | getReadingTime }} min read</span>
-      <span>◦</span>
-      <span>
+      <span aria-hidden="true">◦</span>
+      <span aria-label="{{ page.readingTime or content | getReadingTime }} minute read">
+        {{ page.readingTime or content | getReadingTime }} min read
+      </span>
+      <span aria-hidden="true">◦</span>
+      <span aria-label="Post tags">
         {% if page.displayTags %}
           {% for tag in page.displayTags %}
-          <a href="{{ tag.url | url }}">#{{ tag.name }}</a>{% if not loop.last %} & {% endif %} 
+          <a href="{{ tag.url | url }}" rel="tag">#{{ tag.name }}</a>{% if not loop.last %} <span aria-hidden="true">&</span> {% endif %} 
           {% endfor %}
         {% else %}
           {% for tag in tags | filterTagsForDisplay | sort %} 
           {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-          <a href="{{ tagUrl | url }}">#{{ tag }}</a>{% if not loop.last %} & {% endif %} 
+          <a href="{{ tagUrl | url }}" rel="tag">#{{ tag }}</a>{% if not loop.last %} <span aria-hidden="true">&</span> {% endif %} 
           {% endfor %}
         {% endif %}
       </span>
-      <span class="post__np-icon"
-        ><span class="post__np-icon__inner">🎧</span
-        ><a href="{{audioLink}}" target="_blank">{{ nowPlaying }}</a></span
-      >
+      <span class="post__np-icon">
+        <span class="post__np-icon__inner" aria-hidden="true">🎧</span>
+        <a href="{{audioLink}}" target="_blank" rel="noopener">{{ nowPlaying }}</a>
+      </span>
     </div>
   </header>
 
-  <main class="post__content">{{ content | safe }}</main>
+  <div class="post__content">{{ content | safe }}</div>
 
-  <nav class="post__pagination">
+  <nav class="post__pagination" aria-label="Post navigation">
     {%- set nextPost = collections.sortedPosts | getNextCollectionItem(page) %}
     {%- if nextPost %}
-    <a href="{{ nextPost.url | url }}">
-      <span>←</span>
+    <a href="{{ nextPost.url | url }}" rel="prev">
+      <span aria-hidden="true">←</span>
       <span>{{ nextPost.data.title }}</span>
     </a>
     {% endif %}
     
     {%- set previousPost = collections.sortedPosts | getPreviousCollectionItem(page) %}
     {%- if previousPost %}
-    <a href="{{ previousPost.url | url }}">
+    <a href="{{ previousPost.url | url }}" rel="next">
       <span>{{ previousPost.data.title }}</span>
-      <span>→</span>
+      <span aria-hidden="true">→</span>
     </a>
     {% endif %}
   </nav>

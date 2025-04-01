@@ -1,11 +1,12 @@
-<div class="tags-list">
+<nav class="tags-list" aria-label="Tag navigation">
   {%- for tagStat in collections.tagStats -%}
     <a href="{{ tagStat.url | url }}" 
-       {% if page.url == tagStat.url %}class="tag-active"{% endif %}
-    >#{{ tagStat.name }}<small>[{{ tagStat.count }}]</small></a>
-    {% if not loop.last %} ◦ {% endif %}
+       {% if page.url == tagStat.url %}aria-current="page" class="tag-active"{% endif %}
+       rel="tag"
+    >#{{ tagStat.name }}<small aria-label="{{ tagStat.count }} posts">[{{ tagStat.count }}]</small></a>
+    {% if not loop.last %} <span aria-hidden="true">◦</span> {% endif %}
   {%- endfor -%}
   <span class="post-list__subheading">
       [or, <a href="/">home</a>]
     </span>
-</div> 
+</nav> 

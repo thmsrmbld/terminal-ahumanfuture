@@ -6,6 +6,8 @@
     <meta name="generator" content="{{ eleventy.generator }}">
     <link rel="canonical" href={{ page.url | url | absoluteUrl(site.url) }}>
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Feed">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" href="/images/favicon.ico">
 
     {% bundledcss %}
 
@@ -17,7 +19,7 @@
         {%- endif -%}
     </title>
 
-    <link rel="icon" type= “image/x-icon” href="/images/favicon.ico">
+    <link rel="icon" type=”image/x-icon” href="/images/favicon.ico">
     <meta property="og:title" content="{%- if page.url == "/" -%}{{ site.name }} // Home{%- else -%}{{ title | escape }} // {{ site.name }}{%- endif -%}">
     <meta name="twitter:title" content="{%- if page.url == "/" -%}{{ site.name }} // Home{%- else -%}{{ title | escape }} // {{ site.name }}{%- endif -%}">
     <meta property="og:type" content="website"/>
@@ -43,9 +45,10 @@
     {% endif %}
   </head>
   <body>
+    <a href="#main-content" class="skip-link visually-hidden">Skip to main content</a>
     <div class="layout-wrapper">
 
-      <header class="header">
+      <header class="header" role="banner">
         <div class="header__content">
 
               <h1 class="site-title">
@@ -81,11 +84,11 @@
         </div>
       </header>
 
-      <main class="main">
+      <main id="main-content" class="main">
         {{ content | safe }}
       </main>
 
-      <footer class="footer">
+      <footer class="footer" role="contentinfo">
         <div class="footer__content">
 
         <div class="footer__strapline">

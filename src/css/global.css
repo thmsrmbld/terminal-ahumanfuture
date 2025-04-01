@@ -304,3 +304,32 @@ pre code {
     background-position: -200% center;
   }
 }
+
+/* Skip link for keyboard users */
+.skip-link {
+  position: absolute;
+  top: -50px; /* Off-screen by default */
+  left: 10px;
+  z-index: 100;
+  padding: 8px 10px;
+  background: #000;
+  color: #fff;
+  border: 2px solid #fff;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 10px; /* Move into view when focused */
+}
+
+/* Hide content visually but keep it accessible to screen readers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

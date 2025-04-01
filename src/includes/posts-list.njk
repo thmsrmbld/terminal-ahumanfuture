@@ -1,44 +1,45 @@
 <ul class="post-list">
   {% for post in postslist %}
   <li class="post-list__item">
-    <div class="post-list__item--inner">
+    <article class="post-list__item--inner">
       <div class="post-list__meta-wrapper">
         {% if post.data.featured %}
-          <div class="post-list__featured-badge">
-            <div class="featured-star">★</div>
+          <div class="post-list__featured-badge" aria-label="Featured post">
+            <div class="featured-star" aria-hidden="true">★</div>
           </div>
-          <div>◦</div>
+          <div aria-hidden="true">◦</div>
         {% endif %}
         <div class="post-list__meta">
           <time datetime="{{ post.date | dateToFormat('yyyy-LL-dd') }}">{{ post.date | dateToFormat('yyyy-MM-dd')  }}</time>
-          <span>◦</span>
-          <span>{{ post.content | getReadingTime }} min read</span>
+          <span aria-hidden="true">◦</span>
+          <span aria-label="{{ post.content | getReadingTime }} minute read">{{ post.content | getReadingTime }} min read</span>
         </div>
       </div>
  
-
-      <div class="post-list__tags">
+      <div class="post-list__tags" aria-label="Post tags">
         {% if post.data.displayTags %}
           {% for tag in post.data.displayTags %} 
-          <a href="{{ tag.url | url }}">#{{ tag.name }}</a>{% if not loop.last %} & {% endif %}
+          <a href="{{ tag.url | url }}" rel="tag">#{{ tag.name }}</a>{% if not loop.last %} <span aria-hidden="true">&</span> {% endif %}
           {% endfor %}
         {% else %}
           {% set displayTags = post.data.tags | filterTagsForDisplay | sort %}
           {% for tag in displayTags %} 
           {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-          <a href="{{ tagUrl | url }}">#{{ tag }}</a>{% if not loop.last %} & {% endif %}
+          <a href="{{ tagUrl | url }}" rel="tag">#{{ tag }}</a>{% if not loop.last %} <span aria-hidden="true">&</span> {% endif %}
           {% endfor %}
         {% endif %}
       </div>
 
-      <h3 class="post-list__title">
+      <h2 class="post-list__title">
         <a href="{{ post.url }}">{{ post.data.title }}</a>
-      </h3>
+      </h2>
 
       <p class="post-list__excerpt">{{ post.data.description }}</p>
 
-      <a class="post-list__read-more" href="{{ post.url }}"><span class="dot"></span> Read post</a>
-    </div>
+      <a class="post-list__read-more" href="{{ post.url }}" aria-label="Read full post: {{ post.data.title }}">
+        <span class="dot" aria-hidden="true"></span> Read post
+      </a>
+    </article>
   </li>
   {% endfor %}
 </ul>
