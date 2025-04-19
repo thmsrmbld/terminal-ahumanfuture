@@ -69,8 +69,7 @@
   justify-content: space-around;
   list-style: none;
   font-size: var(--text-base);
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1.25rem;
 }
 
 .nav__list a {
