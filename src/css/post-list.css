@@ -79,7 +79,6 @@
   flex-wrap: wrap;
 }
 
-
 .post-list__featured-badge {
   text-transform: uppercase;
   font-size: var(--text-xs);
@@ -87,7 +86,7 @@
   align-items: center;
   justify-content: center;
   color: var(--background);
-  background-color: var(--accent-quaternary);
+  background-color: var(--accent-secondary);
   width: fit-content;
   border-radius: 50%;
   height: 1.4rem;
@@ -102,7 +101,6 @@
   line-height: 1;
   position: relative;
   top: -0.135em;
-  /* Fine-tune vertical position */
 }
 
 .post-list__item:last-child {
@@ -134,15 +132,10 @@
 /* Post metadata */
 .post-list__meta {
   font-size: var(--text-sm);
-  /* margin-top: 1rem; */
   color: var(--color-90);
   display: flex;
   align-items: center;
   gap: 0.5rem;
-}
-
-.post-list__meta>*+* {
-  margin-left: 0.5rem;
 }
 
 /* Post tags */

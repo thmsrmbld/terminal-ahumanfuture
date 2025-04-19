@@ -3,7 +3,5 @@ layout: base.njk
 ---
 
 <h2>Posts in: #{{ tagName }} ({{ collections.taggedPosts[tagName].length }})</h2>
-  {% include "tag-navigation.njk" %}
-
-{% set postslist = collections.taggedPosts[tagName] %}
-{% include "posts-list.njk" %}
+{% include "tag-navigation.njk" %} {% set postslist = collections.taggedPosts[tagName] %} {% include
+"posts-list.njk" %}

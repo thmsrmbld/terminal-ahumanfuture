@@ -16,6 +16,7 @@
     "babel-loader": "^9.1.3",
     "css-loader": "^7.1.2",
     "cssnano": "^7.0.6",
+    "htmlhint": "^1.1.4",
     "mini-css-extract-plugin": "^2.9.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.45",
@@ -37,8 +38,10 @@
     "build:assets": "webpack --mode production",
     "build:site": "env ELEVENTY_ENV=production eleventy",
     "clean": "rm -rf ./public",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css,html,njk}\"",
-    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md,css,html,njk}\""
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css,html}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md,css,html}\"",
+    "lint": "htmlhint \"src/**/*.njk\"",
+    "lint:fix": "htmlhint \"src/**/*.njk\" --config .htmlhintrc"
   },
   "dependencies": {
     "reading-time": "^1.5.0",

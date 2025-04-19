@@ -2,6 +2,7 @@
 permalink: /feed.xml
 eleventyExcludeFromCollections: true
 ---
+
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ site.name }}</title>
@@ -9,7 +10,9 @@ eleventyExcludeFromCollections: true
   <link href="{{ site.url }}{{ permalink }}" rel="self" />
   <link href="{{ site.url }}/" />
   {% if collections.sortedPosts | length %}
-  <updated>{{ collections.sortedPosts[0].date | dateToFormat("yyyy-MM-dd'T'HH:mm:ss'Z'") }}</updated>
+  <updated
+    >{{ collections.sortedPosts[0].date | dateToFormat("yyyy-MM-dd'T'HH:mm:ss'Z'") }}</updated
+  >
   {% endif %}
   <id>{{ site.url }}</id>
   <author>

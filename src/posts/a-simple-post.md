@@ -2,16 +2,23 @@
 title: A simple post
 date: 2000-01-01
 tags: [demo-content, simple-post]
-description: Meditation gentrify fam, yuccie kickstarter brunch vape. Pitchfork freegan biodiesel bicycle rights. Semiotics flexitarian four loko XOXO raw denim chartreuse.
+description:
+  Meditation gentrify fam, yuccie kickstarter brunch vape. Pitchfork freegan biodiesel bicycle
+  rights. Semiotics flexitarian four loko XOXO raw denim chartreuse.
 published: false
 permalink: false
 ---
 
-Meditation gentrify fam, yuccie kickstarter brunch vape. Pitchfork freegan biodiesel bicycle rights. Semiotics flexitarian four loko XOXO raw denim chartreuse. Cray ramps microdosing everyday carry bicycle rights
+Meditation gentrify fam, yuccie kickstarter brunch vape. Pitchfork freegan biodiesel bicycle rights.
+Semiotics flexitarian four loko XOXO raw denim chartreuse. Cray ramps microdosing everyday carry
+bicycle rights
 
 ## How about a `<blockquote>`?
 
-> Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.
+> Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+> Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.
+> Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit
+> libero, a pharetra augue.
 
 ## Unordered list of stuff:
 

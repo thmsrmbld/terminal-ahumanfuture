@@ -1,0 +1,10 @@
+# Nunjucks templates
+**/*.njk
+**/*.nunjucks
+**/*.nunj
+**/*.html.njk
+
+# Other template files
+**/*.liquid
+**/*.hbs
+**/*.mustache 

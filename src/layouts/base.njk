@@ -1,131 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="{{ eleventy.generator }}">
-    <link rel="canonical" href={{ page.url | url | absoluteUrl(site.url) }}>
-    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Feed">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="apple-touch-icon" href="/images/favicon.ico">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="{{ eleventy.generator }}" />
+    <link rel="canonical" href="{{ page.url | url | absoluteUrl(site.url) }}" />
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Feed" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="apple-touch-icon" href="/images/favicon.ico" />
 
     {% bundledcss %}
 
     <title>
-        {%- if page.url == "/" -%}
-            {{ site.name }} // Home
-        {%- else -%}
-            {{ title | escape }} | {{ site.name }}
-        {%- endif -%}
+      {%- if page.url == "/" -%} {{ site.name }} // Home {%- else -%} {{ title | escape }} | {{
+      site.name }} {%- endif -%}
     </title>
 
-    <link rel="icon" type=”image/x-icon” href="/images/favicon.ico">
-    <meta property="og:title" content="{%- if page.url == "/" -%}{{ site.name }} // Home{%- else -%}{{ title | escape }} // {{ site.name }}{%- endif -%}">
-    <meta name="twitter:title" content="{%- if page.url == "/" -%}{{ site.name }} // Home{%- else -%}{{ title | escape }} // {{ site.name }}{%- endif -%}">
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="{{ site.url + page.url }}"/>
-    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <meta
+      property="og:title"
+      content="{%- if page.url == '/' -%}{{ site.name }} // Home{%- else -%}{{ title | escape }} // {{ site.name }}{%- endif -%}"
+    />
+    <meta
+      name="twitter:title"
+      content="{%- if page.url == '/' -%}{{ site.name }} // Home{%- else -%}{{ title | escape }} // {{ site.name }}{%- endif -%}"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.url + page.url }}" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-    {% set desc = description %}
-    {% if not desc %}
-      {% set desc = content | striptags | truncate(140) %}
-    {% endif %}
-    {% if desc %}
-      <meta name="description" content="{{ desc | escape  }}">
-      <meta property="og:description" content="{{ desc | escape }}">
-      <meta name="description" content="{{ desc | escape }}"/>
-    {% endif %}
-
-    {% if not socialImage %}
-      {% set socialImage = site.defaultSocialImage %}
-    {% endif %}
+    {% set desc = description %} {% if not desc %} {% set desc = content | striptags | truncate(140)
+    %} {% endif %} {% if desc %}
+    <meta name="description" content="{{ desc | escape  }}" />
+    <meta property="og:description" content="{{ desc | escape }}" />
+    <meta name="description" content="{{ desc | escape }}" />
+    {% endif %} {% if not socialImage %} {% set socialImage = site.defaultSocialImage %} {% endif %}
     {% if socialImage %}
-      <meta property="og:image" content="{{ socialImage | url | absoluteUrl(site.url) }}"/>
-      <meta name="twitter:image" content="{{ socialImage | url | absoluteUrl(site.url) }}"/>
+    <meta property="og:image" content="{{ socialImage | url | absoluteUrl(site.url) }}" />
+    <meta name="twitter:image" content="{{ socialImage | url | absoluteUrl(site.url) }}" />
     {% endif %}
   </head>
   <body>
     <a href="#main-content" class="skip-link visually-hidden">Skip to main content</a>
     <div class="layout-wrapper">
-
       <header class="header" role="banner">
         <div class="header__content">
-
-              <h1 class="site-title">
-                <a href={{ "/" | url }}>
-                  {{ site.name }}
-                </a>
-              </h1>
+          <h1 class="site-title">
+            <a href="{{ '/' | url }}"> {{ site.name }} </a>
+          </h1>
 
           {% if site.headerLinks %}
-            <nav class="nav">
-              <ul class="nav__list">
-                {% for item in site.headerLinks %}
-                  {% set currentAttribute = '' %}
-                  {% set externalAttribute = '' %}
-
-                  {% if item.external %}
-                    {% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}
-                  {% endif %}
-
-                  {% if page.url == item.url %}
-                    {% set currentAttribute = 'aria-current="page"' %}
-                  {% endif %}
-
-                  <li class="nav-item">
-                    <a href="{{ item.url | url }}" {{ currentAttribute | safe }} {{ externalAttribute | safe }}>{{ item.text }}</a>
-                  </li>
-                {% endfor %}
-              </ul>
-            </nav>
-
-          {% endif %}
-
-        </div>
-      </header>
-
-      <main id="main-content" class="main">
-        {{ content | safe }}
-      </main>
-
-      <footer class="footer" role="contentinfo">
-        <div class="footer__content">
-
-        <div class="footer__strapline">
-            <small class="shimmer">“I do not care what comes after; I have seen the dragons on the wind of morning.”</small>
-        </div>
-  
-          {% if site.showFooterAttribution %}
-            <div class="footer__attribution">
-               On <a href="https://www.11ty.dev" target="_blank" rel="noopener">11ty</a>, in {% year %},
-               on a modified <a href="https://github.com/yinkakun/eleventy-duo" target="_blank" rel="noopener noreferrer">Duo</a>
-            </div>
-          {% endif %}
-
-
-          <ul class="footer__social-links">
-            {% if site.showFooterLinks and site.footerLinks %}
-              {% for item in site.footerLinks %}
+          <nav class="nav">
+            <ul class="nav__list">
+              {% for item in site.headerLinks %}
+                {% set currentAttribute = '' %}
                 {% set externalAttribute = '' %}
 
                 {% if item.external %}
                   {% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}
                 {% endif %}
 
-                <li>
-                  <a href="{{ item.url | url }}" {{ externalAttribute | safe }} >{{ item.text }}</a>
+                {% if page.url == item.url %}
+                  {% set currentAttribute = 'aria-current="page"' %}
+                {% endif %}
+
+                <li class="nav-item">
+                  <a 
+                    href="{{ item.url | url }}"
+                    {% if page.url == item.url %}aria-current="page"{% endif %}
+                    {% if item.external %}target="_blank" rel="noopener noreferrer"{% endif %}
+                  >{{ item.text }}</a>
                 </li>
               {% endfor %}
-            {% endif %}
+            </ul>
+          </nav>
+          {% endif %}
+        </div>
+      </header>
+
+      <main id="main-content" class="main">{{ content | safe }}</main>
+
+      <footer class="footer" role="contentinfo">
+        <div class="footer__content">
+          <div class="footer__strapline">
+            <small class="shimmer"
+              >"I do not care what comes after; I have seen the dragons on the wind of
+              morning."</small
+            >
+          </div>
+
+          {% if site.showFooterAttribution %}
+          <div class="footer__attribution">
+            On <a href="https://www.11ty.dev" target="_blank" rel="noopener">11ty</a>, in {% year
+            %}, on a modified
+            <a
+              href="https://github.com/yinkakun/eleventy-duo"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Duo</a
+            >
+          </div>
+          {% endif %}
+
+          <ul class="footer__social-links">
+            {% if site.showFooterLinks and site.footerLinks %} {% for item in site.footerLinks %} {%
+            set externalAttribute = '' %} {% if item.external %} {% set externalAttribute =
+            'target="_blank" rel="noopener noreferrer"' %} {% endif %}
+
+            <li>
+              <a href="{{ item.url | url }}" {{ externalAttribute | safe }}>{{ item.text }}</a>
+            </li>
+            {% endfor %} {% endif %}
           </ul>
 
-        <div class="footer__strapline">
+          <div class="footer__strapline">
             <small>◦◦◦</small>
+          </div>
         </div>
-        </div>
-      </div>
-
-    </footer>
+      </footer>
+    </div>
 
     {% bundledjs %}
     <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

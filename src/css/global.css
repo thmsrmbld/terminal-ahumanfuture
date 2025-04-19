@@ -86,7 +86,7 @@ ol {
 ol > li {
   counter-increment: item;
   position: relative;
-  padding-bottom: 0.725rem;
+  /* padding-bottom: 0.725rem; */
 }
 
 ol > li:last-child {
@@ -119,8 +119,9 @@ ol > li::marker {
 }
 
 ul {
-  list-style-type: square;
+  list-style-type: disc;
   list-style-position: inside;
+  margin-top: 1rem;
 }
 
 b,
@@ -164,7 +165,7 @@ td:only-child {
 * + h3,
 * + h4,
 * + h5 {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 * + p {
@@ -193,6 +194,7 @@ blockquote {
   border-left: 4px solid var(--accent-primary);
   font-style: italic;
   font-family: "IBM Plex Sans", sans-serif;
+  font-size: large;
 }
 
 code,

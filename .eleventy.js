@@ -47,7 +47,7 @@ export default function (eleventyConfig) {
         console.log(`[DEBUG] No this.page available for ${outputPath}`);
         return content;
       }
-      
+
       // Get plain text once
       const plainText = content.replace(/(<([^>]+)>)/gi, "");
 
@@ -81,7 +81,7 @@ export default function (eleventyConfig) {
     return {
       excerpt: page.excerpt || "",
       readingTime: page.readingTime || 1,
-      displayTags: page.data?.displayTags || []
+      displayTags: page.data?.displayTags || [],
     };
   });
 
@@ -162,18 +162,22 @@ export default function (eleventyConfig) {
   });
 
   // Add JSON filter for debugging
-  eleventyConfig.addFilter("json", function(value) {
+  eleventyConfig.addFilter("json", function (value) {
     // Handle circular references
     const seen = new WeakSet();
-    return JSON.stringify(value, (key, value) => {
-      if (typeof value === 'object' && value !== null) {
-        if (seen.has(value)) {
-          return '[Circular]';
+    return JSON.stringify(
+      value,
+      (key, value) => {
+        if (typeof value === "object" && value !== null) {
+          if (seen.has(value)) {
+            return "[Circular]";
+          }
+          seen.add(value);
         }
-        seen.add(value);
-      }
-      return value;
-    }, 2);
+        return value;
+      },
+      2
+    );
   });
 
   // Pre-compute posts collection with enhanced metadata

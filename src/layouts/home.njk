@@ -8,11 +8,9 @@ layout: base
 
     {% if site.heroLinks %}
     <ul class="hero__social-links">
-      {% for item in site.heroLinks %} 
-      {% set externalAttribute = '' %} 
-      {% if item.external %} 
-      {% set externalAttribute = 'target="_blank" rel="noopener" aria-label="' + item.text + ' (opens in new window)"' %} 
-      {% endif %}
+      {% for item in site.heroLinks %} {% set externalAttribute = '' %} {% if item.external %} {%
+      set externalAttribute = 'target="_blank" rel="noopener" aria-label="' + item.text + ' (opens
+      in new window)"' %} {% endif %}
 
       <li>
         <a href="{{ item.url | url }}" {{ externalAttribute | safe }}>{{ item.text }}</a>
@@ -30,8 +28,7 @@ layout: base
       [or, <a href="/posts/">all posts ({{ collections.sortedPosts | length }})</a>]
     </div>
   </header>
-  {% set postslist = collections.sortedPosts | head(5) %} 
-  {% include "posts-list.njk" %}
+  {% set postslist = collections.sortedPosts | head(5) %} {% include "posts-list.njk" %}
 </section>
 
 <a class="all-posts-link" href="{{ '/posts/' | url }}">All posts</a>
