@@ -5,7 +5,7 @@
 This repo is for my personal site at
 [terminal.ahumanfuture.co](https://terminal.ahumanfuture.co). It's a gently modified version of a
 minimal theme called [Duo](https://github.com/yinkakun/eleventy-duo), and it's built using the
-excellent [11ty](https://www.11ty.dev). ======= This repo is for my personal site at
+excellent [11ty](https://www.11ty.dev). This repo is for my personal site at
 [terminal.ahumanfuture.co](https://ahumanfuture.co). It's a gently modified version of a minimal
 theme called [Duo](https://github.com/yinkakun/eleventy-duo), and it's built using the excellent
 [11ty](https://www.11ty.dev).
