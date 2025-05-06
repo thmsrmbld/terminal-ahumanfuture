@@ -116,10 +116,10 @@ equitable and profound revolution in the story of the way that human beings rela
 This actual manifestation - often at the expense of our own personal reward - is the only thing that
 wins out against a matrix of incentives that otherwise arc towards the seductive pull of our darker
 and more selfish nature. Many of us are taking new and more influential positions in our
-institutions and communities, or in companies driving what the web looks like into the next
-chapter. There will be difficult things to do to equalise and stabilise against and even reverse the
-way things work today. The bad news is that it will often be difficult to use our positions of
-influence to do the right thing. The good news is that there is no choice but to do those things.
+institutions and communities, or in companies driving what the web looks like into the next chapter.
+There will be difficult things to do to equalise and stabilise against and even reverse the way
+things work today. The bad news is that it will often be difficult to use our positions of influence
+to do the right thing. The good news is that there is no choice but to do those things.
 
 ## The work of forever
 
@@ -139,11 +139,13 @@ effective things in small ways together, in parallel addition to the things that
 We must improve the things we work on today in the small ways that we can, as a first-order
 priority. And to make them stick, we must do them consistently. We must explain ourselves repeatedly
 and clearly and without scolding even when it's hard. And most of all we must demonstrate that the
-results of Making Better Things are their own reward beyond making the line go up at another company
-that exists to sell advertising to companies selling next year's landfill.
+results of Making Better Things are their own reward beyond
+<a href="https://bell.bz/im-getting-fed-up-of-making-the-rich-richer/" target="_blank">making the
+line go up</a> at another company that exists to sell advertising to companies flogging next year's
+landfill.
 
 It has been a long time since I believed that it could be possible to do new, interesting and
-impactful things online together again. And I am looking for the people who are already here who
+impactful things online together again. And I am looking for the people who are already here, who
 think that might be possible too. I am looking for the people who want to stay eager with me. There
 is so much for us to do.
 
