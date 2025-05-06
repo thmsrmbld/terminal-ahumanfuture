@@ -25,14 +25,14 @@ featured: false
 
 ## I remember you, from online
 
-The untimely demise of Twitter has sincerely been one of the great tragedies of my online life. For
-all of it's chaotic circuitry (and Christ, there was a _rat's nest_ of chaotic circuitry), my time
-on Twitter ended up being overwhelmingly good to me. Everything that surrounded the sad and dark
-thing that happened to the platform, the gifted people that worked there and its earned position in
-global information - well, it is something that I consider to be one of the many great sadnesses of
-the modern web, for reasons that are at this point, well documented. It continues in its own way, to
-effects that are clear to see. I don't think that the specifics of that are something I'd write
-about, for complicated reasons that I am still trying to organise in my mind.
+The bloody and untimely demise of Twitter has sincerely been one of the great tragedies of my online
+life. For all of it's chaotic circuitry (and Christ, there was a _rat's nest_ of chaotic circuitry),
+my time on Twitter ended up being overwhelmingly good to me. Everything that surrounded the sad and
+dark thing that happened to the platform, the gifted people that worked there and its earned
+position in global information - well, it is something that I consider to be one of the many great
+sadnesses of the modern web, for reasons that are at this point, well documented. It continues in
+its own way, to effects that are clear to see. I don't think that the specifics of that are
+something I'd write about, for complicated reasons that I am still trying to organise in my mind.
 
 The capture of Twitter exploded a large portion of my social graph, and 13 years of human
 connection. It messily dispersed friendships, professional relationships - and the niche communities
