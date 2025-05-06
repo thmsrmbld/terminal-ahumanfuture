@@ -2,10 +2,10 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7a307170-2fd5-4a8f-a232-589f8510f668/deploy-status)](https://app.netlify.com/sites/terminal-ahumanfuture/deploys)
 
-This repo is for my personal site at
-[terminal.ahumanfuture.co](https://terminal.ahumanfuture.co). It's a gently modified version of a
-minimal theme called [Duo](https://github.com/yinkakun/eleventy-duo), and it's built using the
-excellent [11ty](https://www.11ty.dev). This repo is for my personal site at
+This repo is for my personal site at [terminal.ahumanfuture.co](https://terminal.ahumanfuture.co).
+It's a gently modified version of a minimal theme called
+[Duo](https://github.com/yinkakun/eleventy-duo), and it's built using the excellent
+[11ty](https://www.11ty.dev). This repo is for my personal site at
 [terminal.ahumanfuture.co](https://ahumanfuture.co). It's a gently modified version of a minimal
 theme called [Duo](https://github.com/yinkakun/eleventy-duo), and it's built using the excellent
 [11ty](https://www.11ty.dev).
