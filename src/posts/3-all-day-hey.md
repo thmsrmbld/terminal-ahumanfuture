@@ -23,7 +23,7 @@ featured: false
   [Photo by <a href="https://unsplash.com/@sherwinphotography">Oliver Sherwin</a>]
 </div>
 
-## I remember you, from before
+## I remember you, from online
 
 The untimely demise of Twitter has sincerely been one of the great tragedies of my online life. For
 all of it's chaotic circuitry (and Christ, there was a _rat's nest_ of chaotic circuitry), my time
