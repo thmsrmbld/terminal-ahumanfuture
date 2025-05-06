@@ -116,7 +116,7 @@ equitable and profound revolution in the story of the way that human beings rela
 This actual manifestation - often at the expense of our own personal reward - is the only thing that
 wins out against a matrix of incentives that otherwise arc towards the seductive pull of our darker
 and more selfish nature. Many of us are taking new and more influential positions in our
-institutions and communities, or in companies driving what computing looks like into the next
+institutions and communities, or in companies driving what the web looks like into the next
 chapter. There will be difficult things to do to equalise and stabilise against and even reverse the
 way things work today. The bad news is that it will often be difficult to use our positions of
 influence to do the right thing. The good news is that there is no choice but to do those things.
