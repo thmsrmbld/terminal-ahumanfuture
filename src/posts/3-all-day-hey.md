@@ -9,7 +9,7 @@ tags:
   - conference
   - friendship
 description:
-  “Do stuff. be clenched, curious. Not waiting for inspiration's shove or society's kiss on your
+  “Do stuff. Be clenched, curious. Not waiting for inspiration's shove or society's kiss on your
   forehead. Pay attention. It's all about paying attention. Attention is vitality. It connects you
   with others. It makes you eager. Stay eager.” - Susan Sontag
 published: true
