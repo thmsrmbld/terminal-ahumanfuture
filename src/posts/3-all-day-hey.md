@@ -9,7 +9,7 @@ tags:
   - conference
   - friendship
 description:
-  “We're each of us alone, to be sure. What can you do but hold your hand out in the dark?”
+  “We're each of us alone, to be sure. What can you do but hold your hand out in the dark?” - Ursula K. Le Guin
 published: true
 featured: false
 ---
