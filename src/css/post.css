@@ -7,7 +7,9 @@
 }
 
 .post p {
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
+  line-height: 1.65;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .post > * + * {
@@ -57,6 +59,8 @@
 }
 
 .post__content ul li {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: var(--text-base);
   padding-left: 0;
   text-indent: -1.2rem;
   padding-right: 0;
@@ -68,8 +72,10 @@
 }
 
 .post__content ol li {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: var(--text-base);
   padding-left: 0;
-  text-indent: -2.85rem;
+  text-indent: -2.65rem;
   padding-right: 0;
   margin-left: 1.5rem;
 }

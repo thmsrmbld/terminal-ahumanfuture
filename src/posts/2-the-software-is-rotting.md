@@ -23,7 +23,7 @@ featured: true
 [Photo by <a href="https://unsplash.com/@karlkiwi90?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Karl Anderson</a>]
 </div>
 
-## Your software is rotting.
+## Your software is rotting
 
 Recently I cannot shake the feeling that all software for the Internet is rotting from the inside
 out like a piece of fruit in a forest when you leave it to the order of the natural world. Forests
@@ -223,12 +223,11 @@ well-designed CI/CD pipeline that enforces code review within its workflow is fa
 than a wiki page about code review best practices, which will eventually be disregarded, because
 people are people and work is work.
 
-There are lots of others, too.
-
-The goal here is to evade bureaucratic paralysis while also building systems that organically guide
-engineers toward what is safe and good - while making riskier actions feel deliberate and
-intentional. When the right way is _also_ the easy way, the group naturally leans towards an
-environment where excellence and professionalism becomes the path of least resistance.
+There are lots of others, too. The goal here is to evade bureaucratic paralysis while also building
+systems that organically guide engineers toward what is safe and good - while making riskier actions
+feel deliberate and intentional. When the right way is _also_ the easy way, the group naturally
+leans towards an environment where excellence and professionalism becomes the path of least
+resistance.
 
 #### Reward clarity in code and communication
 

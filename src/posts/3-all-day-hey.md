@@ -9,12 +9,15 @@ tags:
   - conference
   - friendship
 description:
-  “We're each of us alone, to be sure. What can you do but hold your hand out in the dark?” - Ursula K. Le Guin
+  “We're each of us alone, to be sure. What can you do but hold your hand out in the dark?”
 published: true
 featured: false
 ---
 
-<pre>{{ description }}</pre>
+<pre>
+<strong>“We're each of us alone, to be sure. What can you do but hold your hand out in the dark?”</strong> 
+- Ursula K. Le Guin
+</pre>
 
 <img alt="test" src="../images/articles/o-sherwin-leeds.jpg"/>
 <div class="padded-top">
@@ -38,7 +41,7 @@ connection. It messily dispersed friendships, professional relationships - and t
 I love that drive forward the arts, technology and social projects that characterise my adult life.
 It was a lifeline during a pandemic that locked me into my apartment for almost 4 months, alone. I
 met someone on Twitter, who later held me at my wedding. A number of my closest adult relationships
-exist in their richness today because of the _The Bird Site_. Because of all of this, it felt
+exist in their richness today because of the The Bird Site. Because of all of this, it felt
 complicated to extract myself from the only place on the Internet that I had managed to make a home
 of. It felt complicated because _the Internet is real life_, and it has been a long time since it
 wasn't. And I suppose, also, because one of big tech's only consistent cultural behaviours
@@ -48,9 +51,7 @@ understand this is a pessimistic way to read things - but I am still pissed off 
 however, good news: I am no longer ashamed to say "the place was important to me" and the majority
 of my most meaningful connections, I was capable, over time, of saving.
 
-**Which is all to say: I was fucking using that. Put it back. Get out of the kitchen.**
-
-<hr>
+**Which is all to say: I was fucking using that. Put it back. Get out of this kitchen.**
 
 ## Optimism kills the blood machine
 
@@ -60,14 +61,15 @@ the call; it has elected it as a blueprint for future homes, so to speak. The op
 many of the corporations - that have deliberately consolidated an astonishing position of influence
 over the most powerful communication infrastructure in history - is so far away from the promise of
 their original vision. It is unrecognisable. It was never supposed to burn out like this. It was
-exciting, new and hopeful to be a creative, or a builder or a user of the Internet. Being a software
-engineer for a startup was somehow a cool thing. Some sort of digital prospecting for the next wave
-of ideas to move our connection forward. But, an infrastructure co-opted by an untouchable oligopoly
-of Ivy League computer science graduates is the antithesis of the potential of a free and open
-Internet. The brilliant people that built the god-forsaken place are still here to remember that
-vision, because in relative terms, the technology is still brand new. There is a sort of grief among
-many of us about the political and civic ramifications of 75 billion, simultaneous computer
-connections that I don't think that many of us expected to have to bear.
+exciting, new and hopeful to be a creative, or a builder or even _a user_ of the Internet. Being a
+software engineer for a startup was somehow a cool thing. Some sort of digital prospecting,
+computer-whisperer driving home the next wave of ideas to open our world and move our shared
+connection forward. But, an infrastructure co-opted by an untouchable oligopoly of Ivy League
+computer science graduates is the antithesis of the potential of a free and open Internet. The
+brilliant people that built the god-forsaken place are still here to remember that vision, because
+in relative terms, the technology is still brand new. There is a sort of grief among many of us
+about the political and civic ramifications of 75 billion, simultaneous computer connections that I
+don't think that many of us expected to have to bear.
 
 This has been an almost constant point of tension for me, as someone who loves to build and make
 Internet things - but cannot ignore the uncomfortable feeling of moving through a world distorted
@@ -98,12 +100,12 @@ together**. Finding that the bonds are the same in the signals as they are in th
 micro is the macro, this is a vital rediscovery that is key to the optimism required to Build Better
 Things.
 
-Against the backdrop of a very decent collection of speakers, strong coffee and pillowy red velvet
+Against the backdrop of a very decent collection of speakers, hot coffee and pillowy red velvet
 sofas, I couldn't help but feel struck by the power of the good people that are somehow still
 designing and building this future together. This is an industry _packed_ with sensitive,
 thoughtful, sharp, talented people who still give a shit about how to make things right. It is also
-an industry with a strange, hilarious and ridiculous history reflective of a wider, completely
-absurd story of Human Computer Interaction.
+an industry with a strange, hilarious and ridiculous history reflective of a wider, and completely
+absurd, story of Human Computer Interaction.
 
 It strikes me that if we are looking for the people that will be a force for positive change through
 the lens of the next chapter of the independent web - that they are already here because they are
@@ -145,16 +147,15 @@ results of Making Better Things are their own reward - well beyond
 line go up</a> at another company that exists to sell advertising to companies hawking next year's
 landfill.
 
-It has been a long time since I believed that it might still be possible to do new, interesting and
-impactful things online together again. And I am looking for the people who are already here, who
-think that could be possible too. I am looking for the people who want to stay eager with me.
-
 <blockquote>
   “Do stuff. Be clenched, curious. Not waiting for inspiration's shove or society's kiss on your
   forehead. Pay attention. It's all about paying attention. Attention is vitality. It connects you
   with others. It makes you eager. Stay eager.” - Susan Sontag
 </blockquote>
 
-There is so much for us to do.
+It has been a long time since I believed that it might still be possible to do new, interesting and
+impactful things online together again. And I am looking for the people who are already here, who
+think that could be possible too. I am looking for the people who _want to stay eager_. There is so
+much for us to do now.
 
-Until tomorrow. 🕶🖤
+Until tomorrow. 🕶 🖤

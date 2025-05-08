@@ -19,7 +19,7 @@ featured: false
 <img alt="test" src="../images/articles/rachael-ren-U94eGGi_1ZY-unsplash.jpg"/>
 <div class="padded-top">[Photo by <a href="https://unsplash.com/@2094_photography?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Rachael Ren</a>]</div>
 
-<h2>I built a little website and it feels important.</h2>
+<h2>I built a little website and it feels important</h2>
 
 It's hard to explain exactly why it took me so long to build a very small website, but it did and
 I've decided not to feel guilty about it. There's something uniquely weird about how hard it is to
@@ -45,7 +45,7 @@ later is then bought by some other competing monolith, who immediately unleash _
 Makes Line Go Up!_ and then you're really on borrowed time before you're in the **exact same cursed
 position**.
 
-### Unless!
+### Unless
 
 Unless, you own your own little website that is free of the funereal dirge of capital market
 dysfunction. Where the content is not inside some sort of door-wide-open internet-connected database
@@ -55,7 +55,7 @@ sadist, you can just throw the whole damn repo up somewhere else. And it really 
 at all. And you can just write words on it, and keep them, and nobody can drag it out from under
 you, not even planet earth's wealthiest man.
 
-### And that's why I chose 11ty. And it was a good choice.
+### And that's why I chose 11ty. And it was a good choice
 
 And so, this whole project went a little something like this:
 
@@ -115,4 +115,6 @@ do that, _please_:
    [pairings](https://fonts.google.com/knowledge/choosing_type/pairing_typefaces) and they're all
    free.
 
-Got it done. Looking forward to seeing you soon. 🕶 🖤
+Got it done. Looking forward to seeing you soon.
+
+Until tomorrow. 🕶 🖤
