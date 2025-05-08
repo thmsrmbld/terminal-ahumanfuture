@@ -27,7 +27,7 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.85rem;
 }
 
 .post-header h3 {
@@ -63,9 +63,9 @@
 .post-list__item {
   display: flex;
   flex-direction: column;
-  padding-top: 1.6rem;
+  padding-top: 2.2rem;
   padding-right: 0;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   padding-left: 0;
   border-top: 1px solid var(--accent-tertiary);
 }
@@ -134,6 +134,7 @@
   align-items: center;
   gap: 0.5rem;
 }
+
 
 /* Post tags */
 .post-list__tags {
