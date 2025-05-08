@@ -79,9 +79,7 @@ These thoughts came to me in three groups: **Foundations**, **Workflow** and **M
 
 ### Foundations
 
-<pre>When I say "foundations" - I mean: the first decisions we make, that all other decisions are laid
-upon. These are the ground upon which all other battles are fought - and here, hours of research and 
-thinking can save months of future engineering work. Mistakes here compound like little else in the game.</pre>
+<pre>When I say "foundations" - I mean: the first decisions we make, that all other decisions are laid upon. These are the ground upon which all other battles are fought - and here, hours of research and thinking can save months of future engineering work. Mistakes here compound like little else in the game.</pre>
 
 #### Choose 'boring' technology
 
@@ -184,8 +182,7 @@ reason make somebody a leader or a manager; which is a completely different set 
 
 ### Workflow
 
-<pre>When I say 'Workflow', I mean: The environment in which the codebase has space to grow and be
-changed, and the digital and human I/O that enables that.</pre>
+<pre>When I say 'Workflow', I mean: The environment in which the codebase has space to grow and be changed, and the digital and human I/O that enables that.</pre>
 
 #### Make it easy to do the right thing
 
@@ -367,8 +364,7 @@ All this to say, it's about creating an environment where:
 
 ### Maintenance
 
-<pre>When I say 'Maintenance', I mean: The energy, time and will that must be reserved for the ongoing care,
-support and security of the platform.</pre>
+<pre>When I say 'Maintenance', I mean: The energy, time and will that must be reserved for the ongoing care, support and security of the platform.</pre>
 
 All maintenance is deep and true hero-work that will sadly never be celebrated like the work of
 building something new. Building features is much more glamorous, easy to quantify, and create
