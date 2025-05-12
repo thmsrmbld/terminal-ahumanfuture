@@ -198,9 +198,9 @@ blockquote {
 
 code,
 kbd {
-  color: var(--accent-primary);
+  color: #fff;
   font-feature-settings: normal;
-  background: var(--color-30);
+  background: var(--accent-secondary);
   padding: 1px 6px;
   margin: 0 2px;
   font-size: 0.95rem;
@@ -283,6 +283,7 @@ pre code {
 
 .shimmer {
   position: relative;
+  background: linear-gradient(90deg, #222 0%, #fff 20%, #222 40%);
   background: linear-gradient(90deg, #222 0%, #fff 20%, #222 40%);
   color: transparent;
   background-size: 200% 100%;
