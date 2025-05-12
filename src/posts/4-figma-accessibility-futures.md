@@ -47,7 +47,7 @@ information - and this future must include us all_.
 This first pass can be considered the genesis of many of the ideas, philosophies and practices that
 ended up informing
 <a href="https://www.w3.org/TR/WCAG22/" target="_blank" title="Link to WCAG 2.2 Spec."> WCAG
-2.2</a> - the latest crystallisation of now long-established guide-rails designed to ensure that
+2.2</a> - the latest formalisation of now long-established guide-rails designed to ensure that
 Internet products arrive and remain accessible in 2025. It is not only today's gold standard in it's
 ambition to help web products work for the widest group of mixed-access users possible, but also a
 type of acknowledgment that the Internet and the web have, in the blink of an eye, become the most
