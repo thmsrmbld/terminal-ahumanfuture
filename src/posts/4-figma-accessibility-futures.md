@@ -1,6 +1,6 @@
 ---
 title: This future must include us all, even Figma
-date: 2025-05-11
+date: 2025-05-12
 nowPlaying: Hizuki, by Venna
 audioLink: https://open.spotify.com/track/6zfqWviNnpoLbB7lO3Yzwj?si=3191838b6b3b49cd
 tags:
