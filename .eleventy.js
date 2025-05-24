@@ -31,7 +31,22 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(syntaxHighlight);
-  eleventyConfig.addPlugin(eleventyImageTransformPlugin);
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    formats: ["webp"],
+    widths: [640, 1280, "auto"],
+    urlPath: "/img/",
+    outputDir: "./public/img/",
+    defaultAttributes: {
+      loading: "lazy",
+      decoding: "async",
+      sizes: "(min-width: 1280px) 1280px, 100vw"
+    },
+    filenameFormat: function (id, src, width, format, options) {
+      const extension = path.extname(src);
+      const name = path.basename(src, extension);
+      return `${name}-${width}w.${format}`;
+    }
+  });
 
   // Pre-compute data for posts during the build process
   eleventyConfig.addTransform("preprocessContent", function (content, outputPath) {
