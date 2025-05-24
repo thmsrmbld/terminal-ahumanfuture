@@ -32,19 +32,33 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-    formats: ["webp"],
-    widths: [640, 1280, "auto"],
+    formats: ["avif", "webp"],
+    widths: [960, 1280, 1920],
     urlPath: "/img/",
     outputDir: "./public/img/",
     defaultAttributes: {
       loading: "lazy",
       decoding: "async",
-      sizes: "(min-width: 1280px) 1280px, 100vw"
+      fetchpriority: "auto",
+      sizes: "(max-width: 960px) 960px, (max-width: 1280px) 1280px, (max-width: 1920px) 1920px, 2560px"
     },
     filenameFormat: function (id, src, width, format, options) {
       const extension = path.extname(src);
       const name = path.basename(src, extension);
       return `${name}-${width}w.${format}`;
+    },
+    // Add compression settings
+    sharpWebpOptions: {
+      quality: 100,
+      effort: 2, // Lower effort = faster encoding with better quality
+      nearLossless: true, // Use near-lossless mode for better quality
+      alphaQuality: 100 // Maximum alpha channel quality
+    },
+    sharpAvifOptions: {
+      quality: 95, 
+      effort: 4, // Lower effort = less aggressive compression
+      chromaSubsampling: '4:4:4', // Best color reproduction
+      lossless: true // Use lossless mode for maximum quality
     }
   });
 

@@ -21,7 +21,7 @@ featured: false
 
 <img alt="test" src="../images/articles/o-sherwin-leeds.jpg"/>
 <div class="padded-top">
-  [Photo by <a href="https://unsplash.com/@sherwinphotography">Oliver Sherwin</a>]
+  [Photo by <a href="https://unsplash.com/@sherwinphotography" target="_blank">Oliver Sherwin</a>]
 </div>
 
 ## I remember you, from online

@@ -17,7 +17,7 @@ featured: false
 
 <pre>{{ description }}</pre>
 <img alt="test" src="../images/articles/rachael-ren-U94eGGi_1ZY-unsplash.jpg"/>
-<div class="padded-top">[Photo by <a href="https://unsplash.com/@2094_photography?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Rachael Ren</a>]</div>
+<div class="padded-top">[Photo by <a href="https://unsplash.com/@2094_photography?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Rachael Ren</a>]</div>
 
 <h2>I built a little website and it feels important</h2>
 

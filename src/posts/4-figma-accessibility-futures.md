@@ -21,7 +21,7 @@ featured: false
 
 <img alt="test" src="../images/articles/compare-fibre-abstract.jpg"/>
 <div class="padded-top">
-  [Photo by <a href="https://unsplash.com/@comparefibre">Compare Fibre</a>]
+  [Photo by <a href="https://unsplash.com/@comparefibre" target="_blank">Compare Fibre</a>]
 </div>
       
 ## There was a light

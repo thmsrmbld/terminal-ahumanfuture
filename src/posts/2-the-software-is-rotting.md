@@ -20,7 +20,7 @@ featured: true
 
 <img alt="test" src="../images/articles/karl-anderson-7zg5bnhm2X0-unsplash.jpg"/>
 <div class="padded-top">
-[Photo by <a href="https://unsplash.com/@karlkiwi90?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Karl Anderson</a>]
+[Photo by <a href="https://unsplash.com/@karlkiwi90?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Karl Anderson</a>]
 </div>
 
 ## Your software is rotting
