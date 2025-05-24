@@ -40,7 +40,8 @@ export default function (eleventyConfig) {
       loading: "lazy",
       decoding: "async",
       fetchpriority: "auto",
-      sizes: "(max-width: 960px) 960px, (max-width: 1280px) 1280px, (max-width: 1920px) 1920px, 2560px"
+      sizes:
+        "(max-width: 960px) 960px, (max-width: 1280px) 1280px, (max-width: 1920px) 1920px, 2560px",
     },
     filenameFormat: function (id, src, width, format, options) {
       const extension = path.extname(src);
@@ -52,14 +53,14 @@ export default function (eleventyConfig) {
       quality: 100,
       effort: 2, // Lower effort = faster encoding with better quality
       nearLossless: true, // Use near-lossless mode for better quality
-      alphaQuality: 100 // Maximum alpha channel quality
+      alphaQuality: 100, // Maximum alpha channel quality
     },
     sharpAvifOptions: {
-      quality: 95, 
+      quality: 95,
       effort: 4, // Lower effort = less aggressive compression
-      chromaSubsampling: '4:4:4', // Best color reproduction
-      lossless: true // Use lossless mode for maximum quality
-    }
+      chromaSubsampling: "4:4:4", // Best color reproduction
+      lossless: true, // Use lossless mode for maximum quality
+    },
   });
 
   // Pre-compute data for posts during the build process
