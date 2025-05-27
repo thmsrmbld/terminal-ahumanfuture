@@ -5,9 +5,9 @@ nowPlaying: Hizuki, by Venna
 audioLink: https://open.spotify.com/track/6zfqWviNnpoLbB7lO3Yzwj?si=3191838b6b3b49cd
 tags:
   - software
-  - management
   - accessibility
   - future
+  - tooling
 description:
   “If you have come here to help me you are wasting your time. If you have come because your
   liberation is bound up with mine, then let us work together.”
@@ -19,10 +19,10 @@ featured: false
 <strong>“If you have come here to help me you are wasting your time. If you have come because your liberation is bound up with mine, then let us work together.”</strong> - Lilla Watson
 </pre>
 
+<figure>
 <img alt="Abstract red and gold palette image of nodes." src="../images/articles/compare-fibre-abstract.jpg"/>
-<div class="padded-top">
-  [Photo by <a href="https://unsplash.com/@comparefibre" target="_blank">Compare Fibre</a>]
-</div>
+<figcaption class="padded-top">[Photo by <a href="https://unsplash.com/@comparefibre" target="_blank">Compare Fibre</a>]</figcaption>
+</figure>
       
 ## There was a light
 

@@ -15,14 +15,14 @@ featured: false
 ---
 
 <pre>
-<strong>“We're each of us alone, to be sure. What can you do but hold your hand out in the dark?”</strong> 
+<strong>"We're each of us alone, to be sure. What can you do but hold your hand out in the dark?"</strong> 
 - Ursula K. Le Guin
 </pre>
 
+<figure>
 <img alt="test" src="../images/articles/o-sherwin-leeds.jpg"/>
-<div class="padded-top">
-  [Photo by <a href="https://unsplash.com/@sherwinphotography" target="_blank">Oliver Sherwin</a>]
-</div>
+<figcaption class="padded-top">[Photo by <a href="https://unsplash.com/@sherwinphotography" target="_blank">Oliver Sherwin</a>]</figcaption>
+</figure>
 
 ## I remember you, from online
 
@@ -148,9 +148,9 @@ line go up</a> at another company that exists to sell advertising to companies h
 landfill.
 
 <blockquote>
-  “Do stuff. Be clenched, curious. Not waiting for inspiration's shove or society's kiss on your
+  "Do stuff. Be clenched, curious. Not waiting for inspiration's shove or society's kiss on your
   forehead. Pay attention. It's all about paying attention. Attention is vitality. It connects you
-  with others. It makes you eager. Stay eager.” - Susan Sontag
+  with others. It makes you eager. Stay eager." - Susan Sontag
 </blockquote>
 
 It has been a long time since I believed that it might still be possible to do new, interesting and

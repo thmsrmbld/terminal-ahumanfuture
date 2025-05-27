@@ -18,10 +18,10 @@ featured: true
 
 <pre>{{ description }}</pre>
 
+<figure>
 <img alt="test" src="../images/articles/karl-anderson-7zg5bnhm2X0-unsplash.jpg"/>
-<div class="padded-top">
-[Photo by <a href="https://unsplash.com/@karlkiwi90?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Karl Anderson</a>]
-</div>
+<figcaption class="padded-top">[Photo by <a href="https://unsplash.com/@karlkiwi90?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Karl Anderson</a>]</figcaption>
+</figure>
 
 ## Your software is rotting
 

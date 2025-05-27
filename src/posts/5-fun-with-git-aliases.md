@@ -1,74 +1,74 @@
 ---
 title: Git aliases for fun and profit
-date: 2025-05-26
-nowPlaying: It Could Happen To You, by Chet Baker
-audioLink: https://open.spotify.com/track/0Ve39xlLUEwJlxEpKR117l?si=16d821fd32604f6e
+date: 2025-05-28
+nowPlaying: Ekranoplan, by Uamee
+audioLink: https://open.spotify.com/track/3ew4iDqMknbStcXhbX4mdd?si=4ee193ec76b147d0
 tags:
   - software
   - workflow
-description: Useful aliases / shortcuts in everyone's favourite impenetrable version control system.
+  - tooling
+  - ekranoplan
+description:
+  Some little aliases / shortcuts in everyone's favourite version control system. Also, the
+  Lun-class Ekranoplan.
 published: true
 featured: false
 ---
 
 <pre>
-<strong>"Git gets easier once you grasp the basic idea that branches are homeomorphic endofunctors, mapping submanifolds of a Hilbert space."</strong> - Anonymous
+<strong>"Git gets easier once you grasp the basic idea that branches are homeomorphic 
+endofunctors, mapping submanifolds of a Hilbert space."</strong> - Anonymous
 </pre>
 
-<img alt="An abstract photo of a skull with many smaller metallic balls on it." src="../images/articles/caspian.jpg"/>
-<div class="padded-top">
-  [Photo by <a href="https://unsplash.com/photos/a-black-and-white-photo-of-a-sphere-with-many-smaller-balls-on-it-mmM0qB1VW44?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Multi Awesome Studio</a>]
-</div>
+<figure>
+<img alt="The interior of the lun-class Ekranoplan. Dials upon dials on turquoise metal, very complicated." src="../images/articles/caspian.jpg"/>
+<figcaption class="padded-top">
+  [The interior of the Lun-class Ekranoplan.]
+</figcaption>
+</figure>
 
-<!--
-TODO:
+## The Lun-class Ekranoplan was a 280,000-kilogram Soviet-era, cruise-missile mounted seaplane
 
-* Check each command / test them
-* Add colorized images for visual outputs
-* Write closing paragraph
-
--->
-
-## The Lun-class ekranoplan is a 280,000-kilogram Soviet-era cruise-missile equipped battle hovercraft
-
-Sometimes working with <a href="https://git-scm.com/" target="_blank">Git</a> feels like what I
-imagine being a solo captain of the 280,000 kilogram
-<a href="https://en.wikipedia.org/wiki/Lun-class_ekranoplan" target="_blank">Lun-class
+Sometimes working with
+<a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer" aria-label="Git official website (opens in new tab)">Git</a>
+feels like what I imagine being a solo captain of the 280,000 kilogram
+<a href="https://en.wikipedia.org/wiki/Lun-class_ekranoplan" target="_blank" rel="noopener noreferrer" aria-label="Wikipedia article about Lun-class Ekranoplan (opens in new tab)">Lun-class
 ekranoplan</a> would feel like, which incidentally is the only
-<a href="https://en.wikipedia.org/wiki/Ground-effect_vehicle" target="_blank">ground-effect
+<a href="https://en.wikipedia.org/wiki/Ground-effect_vehicle" target="_blank" rel="noopener noreferrer" aria-label="Wikipedia article about ground-effect vehicles (opens in new tab)">ground-effect
 vehicle</a> to ever be operationally mobilised as a warship, deploying in the Caspian Flotilla. It
-was designed by Rostislav Alexeyev of the _Alekseyev Central Hydrofoil Design Bureau_ in 1975, and
-it was used by the Soviet (and later, Russian) navies from 1987 until the late 1990s. It required a
-crew of 15 naval officers to operate.
+was designed in 1975 by Rostislav Alexeyev of what later became the _Alekseyev Central Hydrofoil
+Design Bureau_, and it was used by the Soviet (and later, Russian) navies from 1987 until the late
+1990s. It required a crew of 15 career naval officers to operate.
 
-I occasionally think that stealing and attempting to solo captain the largest piece of Soviet-era
-marine aeronautics equipment of all time would honestly deliver a less ergonomically hostile
-experience than Git; a computer tool that most software developers need to use only 4 commands from
-to save their work to the Internet.
+I occasionally think that personally stealing and attempting to commandeer the largest piece of
+Soviet-era marine aeronautics machinery of all time would deliver a less ergonomically hostile
+experience than Git; a computer tool that most software developers need only 4 commands from in
+order to save their work to the Internet.
 
-I know what you're going to say, because this is what all Git-enjoyers say:
+I know what you're going to say:
 
-<blockquote>"You just don't know how to use Git."</blockquote>
+<blockquote>"You just don't know how to use Git." - Git Enjoyers</blockquote>
 
 <strong>False</strong>. I do know how to use Git. The problem is that I am a person that both knows
 how to use Git _and_ believes that a better world is possible; a complex psychological position that
-requires two separate and orthogonal systems of thought that exist in harmony with one another.
+requires two separate and orthogonal systems of thought to exist in harmony with one another.
 Anyway. I do also sometimes quite like Git, so my thoughts on this issue are mixed and many, and
 influenced strongly by whether or not I am enjoying programming computers that day. Plus, I'm being
-a little unfair. Git _is_ absurdly powerful, and as a result, is sometimes hard. It solves a nasty
-problem that is deceptively complicated in a way that I suspect is the best of all of the main
-VCS's.
+deliberately facetious because I want to write about the Ekranoplan. Git _is_ absurdly powerful, and
+as a result, is sometimes hard. It solves a nasty problem that is deceptively complicated in a way
+that I suspect is still the best of all of the big version control systems. The fact that it
+dominates in spite of its DX is a testament to it's utility.
 
 ## Arcane computer incantations
 
 This article is less about my personal vendetta against arcane computer incantations and more about
 some of the small ways I've found to improve that experience for myself and as such, remain
-employed. Some part of that is writing
-<a href="https://git-scm.com/book/ms/v2/Git-Basics-Git-Aliases" target="_blank">aliases</a>. The
-hilarious part of this paragraph is that even that web page in some way reads like an ancient
-scroll, and the documentation in general is in some places sufficiently obscure that
-<a href="https://git-man-page-generator.lokaltog.net/" target="_blank">it spawned it's own excellent
-parody</a>.
+employed. Some part of that is writing aliases. Hilariously, even the
+<a href="https://git-scm.com/book/ms/v2/Git-Basics-Git-Aliases" target="_blank" rel="noopener noreferrer" aria-label="Git documentation on aliases (opens in new tab)">aliases</a>
+web page in some way reads like an ancient scroll, and the documentation in general is in some
+places sufficiently obscure that
+<a href="https://git-man-page-generator.lokaltog.net/" target="_blank" rel="noopener noreferrer" aria-label="Git man page generator parody (opens in new tab)">it
+spawned it's own excellent parody</a> - indistinguishable from some of the actual documentation.
 
 Simply put, Git aliases are custom shortcuts that you create to replace longer Git commands with
 shorter, easier-to-remember alternatives. They're essentially abbreviations you define in your
@@ -98,6 +98,24 @@ they're also useful for you!
     <summary>What do I put in [alias]?</summary>
     <p class="strong">aa = add --all</p>
     <p>Use it like this: <strong>git aa</strong></p>
+  </details>
+</div>
+
+<div class="alias-card">
+  <div>
+    <h4>git big-mad</h4>
+    <span class="category">Cleanup | ⚠️</span>
+  </div>
+  <p><strong>Purpose:</strong> Completely undo your last commit and discard all changes. This resets your branch to the previous commit.</p>
+  <details>
+    <summary>What do I put in [alias]?</summary>
+    <p class="strong">big-mad = reset --hard HEAD^</p>
+        <p>(This is useful when you want to pretend a commit never
+         happened, not just clear your working directory. Important: Only use uh on 
+         branches that haven't been pushed or shared with others, as it deliberately 
+         rewrites history.)
+         </p>
+      <p>Use it like this: <strong>git big-mad</strong></p>
   </details>
 </div>
 
@@ -157,7 +175,7 @@ they're also useful for you!
 <div class="alias-card">
   <div>
     <h4>git cm</h4>
-    <span class="category">Commit Management</span>
+    <span class="category">Commit Management | ⚠️</span>
   </div>
   <p><strong>Purpose:</strong> Amend the last commit with all current changes while keeping the original commit message.</p>
   <details>
@@ -195,19 +213,6 @@ they're also useful for you!
 
 <div class="alias-card">
   <div>
-    <h4>git di</h4>
-    <span class="category">Review</span>
-  </div>
-  <p><strong>Purpose:</strong> Show changes between your working directory and the last commit.</p>
-  <details>
-    <summary>What do I put in [alias]?</summary>
-    <p class="strong">di = diff</p>
-    <p>Use it like this: <strong>git di</strong> or <strong>git di file.txt</strong></p>
-  </details>
-</div>
-
-<div class="alias-card">
-  <div>
     <h4>git dm</h4>
     <span class="category">Review</span>
   </div>
@@ -222,7 +227,7 @@ they're also useful for you!
 <div class="alias-card">
   <div>
     <h4>git force-safe</h4>
-    <span class="category">Collaboration / Safety</span>
+    <span class="category">Collaboration | ⚠️</span>
   </div>
   <p><strong>Purpose:</strong> Safely force-push your branch, provided no one else has pushed to the branch since your last pull.</p>
   <details>
@@ -313,7 +318,7 @@ they're also useful for you!
 <div class="alias-card">
   <div>
     <h4>git mad</h4>
-    <span class="category">Cleanup/Reset</span>
+    <span class="category">Cleanup | ⚠️</span>
   </div>
   <p><strong>Purpose:</strong> Harness the fury: discard all local changes and reset to the current HEAD.</p>
   <details>
@@ -328,7 +333,7 @@ they're also useful for you!
     <h4>git mm</h4>
     <span class="category">Branch Management</span>
   </div>
-  <p><strong>Purpose:</strong> Merge with a commit message but never fast-forward. This preserves branch history in the commit graph, which is sometimes good if you want that for posterity.</p>
+  <p><strong>Purpose:</strong> Merge with a commit message but don't fast-forward. This preserves branch history in the commit graph, which is sometimes good if you want that for posterity.</p>
   <details>
     <summary>What do I put in [alias]?</summary>
     <p class="strong">mm = merge --no-ff</p>
@@ -390,21 +395,8 @@ they're also useful for you!
 
 <div class="alias-card">
   <div>
-    <h4>git uh</h4>
-    <span class="category">Cleanup/Reset</span>
-  </div>
-  <p><strong>Purpose:</strong> Completely undo your last commit and discard all changes. This resets your branch to the previous commit.</p>
-  <details>
-    <summary>What do I put in [alias]?</summary>
-    <p class="strong">uh = reset --hard HEAD^</p>
-    <p>Use it like this: <strong>git uh</strong></p>
-  </details>
-</div>
-
-<div class="alias-card">
-  <div>
     <h4>git undo</h4>
-    <span class="category">Commit Management</span>
+    <span class="category">Commit Management | ⚠️</span>
   </div>
   <p><strong>Purpose:</strong> Undo the last commit while keeping your changes staged and ready for a new commit.</p>
   <details>
@@ -440,13 +432,20 @@ they're also useful for you!
   </details>
 </div>
 
+<hr>
+
+<figure>
+<img style="margin-bottom: 0.5rem;" alt="A picture of the Lun Class Ekranoplan, abandoned on the Dagestan shore." src="../images/articles/lun-class-ekranoplan.jpg"/>
+<figcaption class="padded-top">[Abandoned off of the Dagestan coast; too weird to live. Too rare to die.]</figcaption>
+</figure>
 <p>
 <details>
-  <summary>Copy the whole .gitconfig snippet</summary>
+  <summary>Grab the whole alias snippet.</summary>
 
 ```
 [alias]
     aa = add --all
+    big-mad = reset --hard HEAD^
     br = branch -r
     bv = branch -vv
     ca = commit --amend
@@ -454,7 +453,6 @@ they're also useful for you!
     cm = commit -a --amend -C HEAD
     co = checkout
     cp = cherry-pick
-    di = diff
     dm = !sh -c 'echo; git diff --name-status --diff-filter=ADM origin/main...$(git rev-parse --abbrev-ref HEAD) | sed -e "s/^A/\\x1b[32mA\\x1b[0m/" -e "s/^M/\\x1b[33mM\\x1b[0m/" -e "s/^D/\\x1b[31mD\\x1b[0m/"; echo; echo -e "\\x1b[94mPaths changed: $(git diff --name-status --diff-filter=ADM origin/main...$(git rev-parse --abbrev-ref HEAD) | wc -l)\\x1b[0m"'
     force-safe = push --force-with-lease
     graph = log --oneline --graph --decorate --all
@@ -469,7 +467,6 @@ they're also useful for you!
     st = status --short --branch
     sw = switch -c
     sync = !git fetch origin $1:$1
-    uh = reset --hard HEAD^
     undo = reset --soft HEAD^
     unstage = reset HEAD --
     wip = !git add -A && git commit -m "WIP"
@@ -477,6 +474,12 @@ they're also useful for you!
 
 </details>
 </p>
-
-<p>Hope that helped!</p>
-<p>Until tomorrow. 🕶 🖤</p>
+<p>
+Good luck with Git. Learn more, and 
+<a href="https://wildlyinaccurate.com/a-hackers-guide-to-git/" target="_blank" rel="noopener noreferrer" aria-label="A Hacker's Guide to Git (opens in new tab)">learn excellently, here</a>. As always, I am wishing you a kinder sea.  
+</p>
+<p>
+<em>(Metaphorically and literally; a kind sea was crucial for
+the Lun-class Ekranoplan, a 280,000kg vehicle that could only fly a maximum of 10ft above the water's surface due to its short wingspan, so could not be mobilised if seas were even mildly choppy.)</em>
+</p>
+<p> 🕶 🖤</p>
