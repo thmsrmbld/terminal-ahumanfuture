@@ -187,19 +187,6 @@ they're also useful for you!
 
 <div class="alias-card">
   <div>
-    <h4>git co</h4>
-    <span class="category">Branch Management</span>
-  </div>
-  <p><strong>Purpose:</strong> Switch branches or restore files easily.</p>
-  <details>
-    <summary>What do I put in [alias]?</summary>
-    <p class="strong">co = checkout</p>
-    <p>Use it like this: <strong>git co main</strong> or <strong>git co feature/branch</strong></p>
-  </details>
-</div>
-
-<div class="alias-card">
-  <div>
     <h4>git cp</h4>
     <span class="category">Branch Management</span>
   </div>
@@ -216,10 +203,11 @@ they're also useful for you!
     <h4>git dm</h4>
     <span class="category">Review</span>
   </div>
-  <p><strong>Purpose:</strong> See a colorized summary of files changed compared to the main branch.</p>
+  <p><strong>Purpose:</strong> See a colorized summary of files changed on your current branch, compared to the main branch.</p>
   <details>
     <summary>What do I put in [alias]?</summary>
     <p class="strong">dm = "!sh -c 'echo; git diff --name-status --diff-filter=ADM origin/main...$(git rev-parse --abbrev-ref HEAD) | sed -e \"s/^A/\\x1b[32mA\\x1b[0m/\" -e \"s/^M/\\x1b[33mM\\x1b[0m/\" -e \"s/^D/\\x1b[31mD\\x1b[0m/\"; echo; echo -e \"\\x1b[94mPaths changed: $(git diff --name-status --diff-filter=ADM origin/main...$(git rev-parse --abbrev-ref HEAD) | wc -l)\\x1b[0m\"'"</p>
+    <p>(Cool for working out exactly in what way your local branch is different to that of main.)</p>
     <p>Use it like this: <strong>git dm</strong></p>
   </details>
 </div>
