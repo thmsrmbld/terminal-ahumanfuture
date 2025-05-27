@@ -84,10 +84,6 @@ export default function (eleventyConfig) {
       // Extract excerpt cleanly
       const excerpt = plainText.substr(0, plainText.lastIndexOf(" ", 200)) + "...";
 
-      // Pre-compute reading time only once
-      const stats = readingTime(plainText);
-      const readingMinutes = Math.ceil(stats.minutes) || 1;
-
       // Pre-process tags for display
       if (this.page.tags) {
         this.page.displayTags = this.page.tags
@@ -101,7 +97,7 @@ export default function (eleventyConfig) {
 
       // Store pre-computed data
       this.page.excerpt = excerpt;
-      this.page.readingTime = readingMinutes;
+      // Reading time is handled by the plugin, no need to calculate manually
     }
     return content;
   });
@@ -158,12 +154,22 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
-  eleventyConfig.addFilter("excerpt", (post) => {
+  // Use pre-computed excerpt from the transform when available
+  eleventyConfig.addFilter("excerpt", (post, page) => {
+    if (page && page.excerpt) {
+      return page.excerpt;
+    }
+    // Fallback to computing it on the fly if needed
     const content = post.replace(/(<([^>]+)>)/gi, "");
     return content.substr(0, content.lastIndexOf(" ", 200)) + "...";
   });
 
-  eleventyConfig.addFilter("getReadingTime", function (content) {
+  // Use the reading-time plugin data
+  eleventyConfig.addFilter("getReadingTime", function (content, page) {
+    if (page && page.readingTime) {
+      return page.readingTime;
+    }
+    // Fallback only if needed
     const stats = readingTime(content || "");
     return Math.ceil(stats.minutes) || 1;
   });
