@@ -1,6 +1,6 @@
 ---
 title: Git aliases for fun and profit
-date: 2025-05-28
+date: 2025-05-27
 nowPlaying: Ekranoplan, by Uamee
 audioLink: https://open.spotify.com/track/3ew4iDqMknbStcXhbX4mdd?si=4ee193ec76b147d0
 tags:
