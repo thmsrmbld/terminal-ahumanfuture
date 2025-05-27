@@ -16,8 +16,7 @@ featured: false
 ---
 
 <pre>
-<strong>"Git gets easier once you grasp the basic idea that branches are homeomorphic 
-endofunctors, mapping submanifolds of a Hilbert space."</strong> - Anonymous
+<strong>"Git gets easier once you grasp the basic idea that branches are homeomorphic endofunctors, mapping submanifolds of a Hilbert space."</strong> - Anonymous
 </pre>
 
 <figure>
