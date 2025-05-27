@@ -201,8 +201,6 @@ kbd {
   color: var(--accent-secondary);
   font-feature-settings: normal;
   background: #fff;
-  padding: 1px 6px;
-  margin: 0 2px;
   font-size: 0.95rem;
 }
 

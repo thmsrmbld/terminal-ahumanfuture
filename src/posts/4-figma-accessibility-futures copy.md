@@ -19,7 +19,7 @@ featured: false
 <strong>“If you have come here to help me you are wasting your time. If you have come because your liberation is bound up with mine, then let us work together.”</strong> - Lilla Watson
 </pre>
 
-<img alt="test" src="../images/articles/compare-fibre-abstract.jpg"/>
+<img alt="Abstract red and gold palette image of nodes." src="../images/articles/compare-fibre-abstract.jpg"/>
 <div class="padded-top">
   [Photo by <a href="https://unsplash.com/@comparefibre" target="_blank">Compare Fibre</a>]
 </div>

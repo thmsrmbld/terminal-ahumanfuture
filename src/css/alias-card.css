@@ -1,6 +1,6 @@
 .alias-card {
   background: var(--background);
-  padding: 0.8rem 1rem;
+  padding: 1.2rem 1.5rem;
   margin-top: 1.4rem;
   border: 2px solid var(--accent-test);
   display: flex;
@@ -43,8 +43,16 @@
 }
 
 .alias-card details {
-  margin-top: 0.5rem;
+  margin-top: 0.35rem;
   font-size: var(--text-sm);
+  font-family: "Roboto Mono", sans-serif;
+  font-size: var(--text-xs);
+}
+
+.alias-card details p {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: var(--text-xs);
+  margin-top: 0.35rem;
 }
 
 .alias-card summary {
@@ -52,4 +60,8 @@
   color: var(--accent-secondary);
   font-weight: 500;
   text-decoration: underline;
+}
+
+.strong {
+  font-weight: 600;
 }
