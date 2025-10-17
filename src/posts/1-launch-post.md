@@ -17,7 +17,7 @@ featured: false
 
 <pre>{{ description }}</pre>
 <figure>
-<img alt="test" src="../images/articles/rachael-ren-U94eGGi_1ZY-unsplash.jpg"/>
+<img alt="An abstract, futurist corridor, in white, grey and black." src="../images/articles/rachael-ren-U94eGGi_1ZY-unsplash.jpg"/>
 <figcaption class="padded-top">[Photo by <a href="https://unsplash.com/@2094_photography?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Rachael Ren</a>]</figcaption>
 </figure>
 

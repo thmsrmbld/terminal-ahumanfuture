@@ -20,7 +20,7 @@ featured: false
 </pre>
 
 <figure>
-<img alt="test" src="../images/articles/o-sherwin-leeds.jpg"/>
+<img alt="Leeds arcade, shopping complex, old style architecture." src="../images/articles/o-sherwin-leeds.jpg"/>
 <figcaption class="padded-top">[Photo by <a href="https://unsplash.com/@sherwinphotography" target="_blank">Oliver Sherwin</a>]</figcaption>
 </figure>
 

@@ -1,5 +1,5 @@
 {
   "layout": "post",
   "tags": ["posts"],
-  "permalink": "posts/{{ date | dateToFormat('yyyy-MM-dd') }}/{{ title | slug }}/index.html"
+  "permalink": "posts/{{ date | dateToFormat('yyyy-MM-dd') }}/{{ slug or (title | slug) }}/index.html"
 }
