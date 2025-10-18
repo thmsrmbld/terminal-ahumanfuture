@@ -34,8 +34,8 @@ and you pay a tiny amount extra to have them delivered to your home in person, b
 than not, they turn up warm from the oven. It is fantastic bread made by a gifted and skilled human
 being who makes one thing and really cares about that thing being outstanding.
 
-The poison installed in my brain by a decade of reading about Silicon Valley always thinks 'this is
-a business that can never scale' and it's like well yes that is the fucking point.
+The poisonous tumour installed in my brain by a decade of reading about Silicon Valley always thinks
+'this is a business that can never scale' and it's like well yes that is the fucking point actually.
 
 It is curious that in 2025 in the United Kingdom it somehow feels like some sort of act of radical
 localism to buy a food item with a 30,000 year history made by a business that is not currently
@@ -176,19 +176,19 @@ like fruits and vegetables. I've been buying second-hand Blu-rays for like £1 e
 the rebuild of my physical media library. I've been buying my bread from Tatjana.
 
 I think there's a sad and predictable response to an attempt to do better in an environment where
-individuals alone cannot make the difference they want to be able to due the overwhelming power of
-oligopoly. A number of people have fairly gleefully (?) told me that not shopping at Amazon doesn't
-change anything because AWS powers 35% of the Internet, like I don't already fucking know what a
-dismal situation that is. A few have told me things like "they're all doing bad stuff", and the
-worst of all of this shit is "there's no ethical consumption under capitalism". Like, so what? Even
-if that _is_ true, so what? You get to write yourself permission to default to the lowest common
-denominator shit possible and that that's not behaviour that shapes collective incentive? It's the
-same school of thought of 'well, if I don't do Bad Thing X, someone else just will anyway'. The
-correct response to that is 'let it be them'. It's a manoeuvre and it's a transparent line of shit
-and even I knew that for all the years I was ignoring it myself.
+individuals alone cannot make the difference they want to be able to due to the overwhelming power
+of oligopoly. A number of people have fairly gleefully (?) told me that not shopping at Amazon
+doesn't change anything because AWS powers 35% of the Internet, like I don't already fucking know
+what a dismal situation that is. A few have told me things like "they're all doing bad stuff", and
+the worst of all of this shit is "there's no ethical consumption under capitalism". Like, so what?
+Even if that _is_ true, so what? You get to write yourself permission to default to the lowest
+common denominator shit possible and that that's not behaviour that shapes collective incentive?
+It's the same school of thought of 'well, if I don't do Bad Thing X, someone else just will anyway'.
+The correct response to that is 'let it be them'. It's a manoeuvre and it's a transparent line of
+shit and even I knew that for all the years I was ignoring it myself.
 
-I haven't been talked down to by anybody else who is making their own gentle change. The same way
-that you rarely get shit on by somebody doing better than you at anything.
+I haven't been talked down to by anybody else who is also making their own gentle change. The same
+way that you rarely get shit on by somebody doing better than you at anything.
 
 This consistent misread is that no positive change is worth making unless you make it in a pristine,
 completely consistent, platonic final form. No. Not only is this characteristic of the main problem
@@ -212,7 +212,7 @@ On a parting note, I leave you with two of the greatest to do it:
 
 <blockquote>
   "The ultimate, hidden truth of the world is that it is something that we make, and 
-  could just as easily make differently" - David Graeber
+  could just as easily make differently." - David Graeber
 </blockquote>
 
 And:
