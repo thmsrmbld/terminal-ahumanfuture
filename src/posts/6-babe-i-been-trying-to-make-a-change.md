@@ -9,6 +9,7 @@ tags:
   - community
   - social
   - civics
+  - future
 description: “...and could just as easily make differently.”
 published: true
 featured: false
