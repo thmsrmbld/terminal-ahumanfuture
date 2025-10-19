@@ -2,7 +2,7 @@
 title: About
 layout: about.njk
 name: Thomas Rumbold
-image: "/images/me.jpeg"
+image: "/images/me-2.JPG"
 ---
 
 Hello! I'm Thomas, and I'm a computer programmer and creative based in and around the city of
